@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 
 import '../../../core/adaptative_screen/adaptative_screen.dart';
-import '../../modules/home/home_view.dart';
+import '../../modules/views/home/home_view.dart';
 
 class HomeRouter {
   static const path = '/home';

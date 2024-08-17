@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-import '../../../../core/adaptative_screen/adaptative_screen.dart';
+import '../../../../../core/adaptative_screen/adaptative_screen.dart';
 
 class ComicItemView extends StatelessWidget {
   final AdaptativeScreen adaptativeScreen;

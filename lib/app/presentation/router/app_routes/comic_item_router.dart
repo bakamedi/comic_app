@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
 import '../../../core/adaptative_screen/adaptative_screen.dart';
-import '../../modules/comic_item/view/comic_item_view.dart';
+import '../../modules/views/comic_item/view/comic_item_view.dart';
 
 class ComicItemRouter {
   static const path = '/comic-item';
