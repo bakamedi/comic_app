@@ -41,10 +41,6 @@ class ComicsW extends StatelessWidget {
                   ],
                 );
               },
-            ).sliverPadding(
-              EdgeInsets.only(
-                top: adaptativeScreen.bhp(10),
-              ),
             ),
     );
   }
