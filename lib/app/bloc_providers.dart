@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
 
+import 'presentation/modules/blocs/comic_item/comic_item_cubit.dart';
 import 'presentation/modules/blocs/home_bloc/home_cubit.dart';
 import 'presentation/router/app_routers_config.dart';
 
@@ -15,11 +16,14 @@ class BlocProviders extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
+          create: (context) => getIt<RouterCubit>(),
+        ),
+        BlocProvider(
           create: (context) => getIt<HomeCubit>(),
         ),
         BlocProvider(
-          create: (context) => getIt<RouterCubit>(),
-        )
+          create: (context) => getIt<ComicItemCubit>(),
+        ),
       ],
       child: const MyApp(),
     );

@@ -38,7 +38,7 @@ class ComicBottomW extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    comic.name ?? 'SIN NOMBRE',
+                    comic.name ?? 'Ver más',
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w500,

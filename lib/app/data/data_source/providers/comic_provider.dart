@@ -10,8 +10,16 @@ class ComicProvider {
     required HttpHelper httpHelper,
   }) : _httpHelper = httpHelper;
 
-  Future<Either<Failure, IssuesDataResponse>> getComics() async {
-    final result = await _httpHelper.request('issues/');
+  Future<Either<Failure, IssuesDataResponse>> getComics({
+    int limit = 10,
+  }) async {
+    final result = await _httpHelper.request(
+      'issues/',
+      queryParameters: {
+        'sort': 'cover_date:desc',
+        'limit': limit,
+      },
+    );
     return result.when(
       success: (status, data) {
         final issuesData = issuesDataResponseFromJson(data);
