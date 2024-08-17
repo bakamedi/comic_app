@@ -38,7 +38,7 @@ void _injectProviders() {
       receiveTimeout: _httpTimeout,
       sendTimeout: _httpTimeout,
       queryParameters: {
-        'api_key': '497eee3d81418de61da01a61c124a7bcf6fa55cd',
+        'api_key': const String.fromEnvironment('API_KEY'),
         'format': 'json',
       },
     ),

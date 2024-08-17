@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../domain/failures/failure.dart';
 import '../../../../domain/repositories/comic_repository.dart';
 import 'home_state.dart';
 
@@ -10,6 +11,8 @@ class HomeCubit extends Cubit<HomeState> {
     required ComicRepository comicRepository,
   })  : _comicRepository = comicRepository,
         super(const HomeState(
+          loading: true,
+          failure: Failure.unknown(),
           issuesDataResponse: null,
         )) {
     getAll();
@@ -22,6 +25,7 @@ class HomeCubit extends Cubit<HomeState> {
       right: (success) {
         emit(
           HomeState(
+            loading: false,
             issuesDataResponse: success,
           ),
         );
