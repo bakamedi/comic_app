@@ -1,3 +1,7 @@
+import '../../core/utils/typedefs.dart';
+import '../failures/failure.dart';
+import '../responses/issues_data_response.dart';
+
 abstract class ComicRepository {
-  getAllComics();
+  FutureEither<Failure, IssuesDataResponse> getAllComics();
 }

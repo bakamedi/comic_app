@@ -1,10 +1,14 @@
 import 'package:equatable/equatable.dart';
 
-class HomeState extends Equatable {
-  final int counter;
+import '../../../../domain/responses/issues_data_response.dart';
 
-  const HomeState({required this.counter});
+class HomeState extends Equatable {
+  final IssuesDataResponse? issuesDataResponse;
+
+  const HomeState({
+    this.issuesDataResponse,
+  });
 
   @override
-  List<Object?> get props => [counter];
+  List<Object?> get props => [issuesDataResponse];
 }

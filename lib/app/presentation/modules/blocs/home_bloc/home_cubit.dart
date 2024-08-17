@@ -1,20 +1,31 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../domain/repositories/comic_repository.dart';
 import 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
+  final ComicRepository _comicRepository;
+
   HomeCubit({
-    int counter = 0,
-  }) : super(HomeState(counter: counter));
+    required ComicRepository comicRepository,
+  })  : _comicRepository = comicRepository,
+        super(const HomeState(
+          issuesDataResponse: null,
+        )) {
+    getAll();
+  }
 
-  int get counter => state.counter;
-
-  void changeCounter() {
-    int count = counter + 1;
-    emit(
-      HomeState(
-        counter: count++,
-      ),
+  void getAll() async {
+    final result = await _comicRepository.getAllComics();
+    result.when(
+      left: (failure) {},
+      right: (success) {
+        emit(
+          HomeState(
+            issuesDataResponse: success,
+          ),
+        );
+      },
     );
   }
 }

@@ -15,14 +15,18 @@ const _httpTimeout = Duration(
 GetIt _getIt = GetIt.instance;
 
 void injectDependencies() {
-  _injectCubits();
   _injectProviders();
   _injectRepositories();
+  _injectCubits();
 }
 
 void _injectCubits() {
   _getIt.registerSingleton(RouterCubit());
-  _getIt.registerSingleton(HomeCubit());
+  _getIt.registerSingleton(
+    HomeCubit(
+      comicRepository: _getIt<ComicRepository>(),
+    ),
+  );
 }
 
 void _injectProviders() {
@@ -33,6 +37,10 @@ void _injectProviders() {
       connectTimeout: _httpTimeout,
       receiveTimeout: _httpTimeout,
       sendTimeout: _httpTimeout,
+      queryParameters: {
+        'api_key': '497eee3d81418de61da01a61c124a7bcf6fa55cd',
+        'format': 'json',
+      },
     ),
   );
 

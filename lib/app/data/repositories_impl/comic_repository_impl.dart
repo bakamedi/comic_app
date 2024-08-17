@@ -1,4 +1,7 @@
+import '../../core/utils/typedefs.dart';
+import '../../domain/failures/failure.dart';
 import '../../domain/repositories/comic_repository.dart';
+import '../../domain/responses/issues_data_response.dart';
 import '../data_source/providers/comic_provider.dart';
 
 class ComicRepositoryImpl extends ComicRepository {
@@ -9,8 +12,7 @@ class ComicRepositoryImpl extends ComicRepository {
   }) : _comicProvider = comicProvider;
 
   @override
-  getAllComics() {
-    // TODO: implement getAllComics
-    throw UnimplementedError();
+  FutureEither<Failure, IssuesDataResponse> getAllComics() async {
+    return await _comicProvider.getComics();
   }
 }
