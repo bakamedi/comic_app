@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../domain/responses/issues_data_response.dart';
+import '../../../core/adaptative_screen/adaptative_screen.dart';
 import '../blocs/home_bloc/home_cubit.dart';
 import '../blocs/home_bloc/home_state.dart';
+import 'widgets/comics_w.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+  final AdaptativeScreen adaptativeScreen;
+
+  const HomeView({
+    super.key,
+    required this.adaptativeScreen,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,22 +23,10 @@ class HomeView extends StatelessWidget {
         builder: (context, homeState) {
           return CustomScrollView(
             slivers: [
-              homeState.issuesDataResponse == null
-                  ? const SliverToBoxAdapter(
-                      child: SizedBox(),
-                    )
-                  : SliverList.builder(
-                      itemCount: homeState.issuesDataResponse!.results!.length,
-                      itemBuilder: (context, index) {
-                        final Comic comic =
-                            homeState.issuesDataResponse!.results![index];
-                        print(index);
-                        return ListTile(
-                          leading: const SizedBox.shrink(),
-                          title: Text(comic.issueNumber!),
-                        );
-                      },
-                    ),
+              ComicsW(
+                adaptativeScreen: adaptativeScreen,
+                homeCubit: homeCubit,
+              ),
             ],
           );
         },

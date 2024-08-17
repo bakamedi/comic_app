@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'app/bloc_providers.dart';
 import 'app/inject_dependencies.dart';
+import 'app/load_env.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,7 +11,7 @@ void main() async {
     DeviceOrientation.portraitUp,
     DeviceOrientation.portraitDown,
   ]);
-
+  await loadEnv();
   injectDependencies();
   runApp(
     const BlocProviders(),

@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
 
 import 'data/data_source/providers/comic_provider.dart';
@@ -38,7 +39,7 @@ void _injectProviders() {
       receiveTimeout: _httpTimeout,
       sendTimeout: _httpTimeout,
       queryParameters: {
-        'api_key': const String.fromEnvironment('API_KEY'),
+        'api_key': dotenv.get('API_KEY'),
         'format': 'json',
       },
     ),

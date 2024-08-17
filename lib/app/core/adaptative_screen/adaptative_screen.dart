@@ -31,4 +31,7 @@ class AdaptativeScreen {
   double wp(double percent) => width * percent / 100;
   double hp(double percent) => height * percent / 100;
   double dp(double percent) => diagonal * percent / 100;
+
+  double bwh(double percent) => blockSizeHorizontal * percent;
+  double bhp(double percent) => blockSizeVertical * percent;
 }
