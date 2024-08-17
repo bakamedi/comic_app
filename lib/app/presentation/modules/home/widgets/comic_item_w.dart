@@ -20,25 +20,31 @@ class ComicItemW extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {},
-      child: ClipRRect(
-        borderRadius: const BorderRadius.all(
-          Radius.circular(20.0),
-        ),
-        child: Stack(
-          children: [
-            ComicImageW(
-              adaptativeScreen: adaptativeScreen,
-              originalUrl: comic.image!.originalUrl!,
+      child: ClipRect(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+          child: ClipRRect(
+            borderRadius: const BorderRadius.all(
+              Radius.circular(20.0),
             ),
-            ComicBottomW(
-              adaptativeScreen: adaptativeScreen,
+            child: Stack(
+              children: [
+                ComicImageW(
+                  adaptativeScreen: adaptativeScreen,
+                  originalUrl: comic.image!.originalUrl!,
+                ),
+                ComicBottomW(
+                  adaptativeScreen: adaptativeScreen,
+                  comic: comic,
+                ),
+              ],
             ),
-          ],
-        ),
-      ).padding(
-        EdgeInsets.symmetric(
-          vertical: adaptativeScreen.bhp(1),
-          horizontal: adaptativeScreen.bwh(4),
+          ).padding(
+            EdgeInsets.symmetric(
+              vertical: adaptativeScreen.bhp(1),
+              horizontal: adaptativeScreen.bwh(4),
+            ),
+          ),
         ),
       ),
     );

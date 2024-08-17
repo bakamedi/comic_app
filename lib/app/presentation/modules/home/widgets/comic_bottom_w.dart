@@ -3,13 +3,18 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 import '../../../../core/adaptative_screen/adaptative_screen.dart';
+import '../../../../domain/responses/issues_data_response.dart';
+import '../../../global/extensions/strings_ext.dart';
+import '../../../global/extensions/widgets_ext.dart';
 
 class ComicBottomW extends StatelessWidget {
   final AdaptativeScreen adaptativeScreen;
+  final Comic comic;
 
   const ComicBottomW({
     super.key,
     required this.adaptativeScreen,
+    required this.comic,
   });
 
   @override
@@ -18,18 +23,42 @@ class ComicBottomW extends StatelessWidget {
       bottom: 0,
       left: 0,
       right: 0,
-      child: ClipRect(
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
-          child: Container(
-            alignment: Alignment.center,
-            padding: EdgeInsets.symmetric(vertical: adaptativeScreen.bhp(2)),
-            color: Colors.grey.withOpacity(0.2),
-            child: Text(
-              'data',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: adaptativeScreen.dp(2),
+      child: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topRight: Radius.circular(10.0),
+          topLeft: Radius.circular(10.0),
+        ),
+        child: ClipRect(
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+            child: Container(
+              padding: EdgeInsets.symmetric(
+                vertical: adaptativeScreen.bhp(2),
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    comic.name ?? 'SIN NOMBRE',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: adaptativeScreen.dp(2),
+                    ),
+                  ),
+                  adaptativeScreen.bhp(1).h,
+                  Text(
+                    comic.description.deleteHtmlTags,
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: adaptativeScreen.dp(1.25),
+                    ),
+                  ).padding(
+                    EdgeInsets.symmetric(
+                      horizontal: adaptativeScreen.bwh(3),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

@@ -5,6 +5,7 @@ import '../../../../domain/responses/issues_data_response.dart';
 import '../../../global/widgets/states_w/state_body_gw.dart';
 import '../../../global/extensions/widgets_ext.dart';
 import '../../blocs/home_bloc/home_cubit.dart';
+import 'comic_background_w.dart';
 import 'comic_item_w.dart';
 
 class ComicsW extends StatelessWidget {
@@ -27,9 +28,17 @@ class ComicsW extends StatelessWidget {
               itemBuilder: (context, index) {
                 final Comic comic =
                     homeCubit.issuesDataResponse!.results![index];
-                return ComicItemW(
-                  adaptativeScreen: adaptativeScreen,
-                  comic: comic,
+                return Stack(
+                  children: [
+                    ComicBackgroundW(
+                      adaptativeScreen: adaptativeScreen,
+                      originalUrl: comic.image!.originalUrl!,
+                    ),
+                    ComicItemW(
+                      adaptativeScreen: adaptativeScreen,
+                      comic: comic,
+                    ),
+                  ],
                 );
               },
             ).sliverPadding(
