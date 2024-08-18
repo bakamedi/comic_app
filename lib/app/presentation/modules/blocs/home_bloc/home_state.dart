@@ -16,5 +16,9 @@ class HomeState extends Equatable {
   });
 
   @override
-  List<Object?> get props => [issuesDataResponse, failure, stateType];
+  List<Object?> get props => [
+        issuesDataResponse,
+        failure,
+        stateType,
+      ];
 }

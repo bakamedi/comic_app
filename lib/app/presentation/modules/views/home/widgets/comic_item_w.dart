@@ -5,6 +5,7 @@ import '../../../../global/extensions/widgets_ext.dart';
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
 import '../../../../../domain/responses/issues_data_response.dart';
 import '../../../../router/app_routers_config.dart';
+import '../../../blocs/comic_item/comic_item_cubit.dart';
 import 'comic_bottom_w.dart';
 import 'comic_image_w.dart';
 
@@ -20,8 +21,12 @@ class ComicItemW extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final RouterCubit routerCubit = context.read<RouterCubit>();
+    final ComicItemCubit comicItemCubit = context.read<ComicItemCubit>();
     return GestureDetector(
-      onTap: () => routerCubit.goComic(),
+      onTap: () {
+        comicItemCubit.setComicItem(comic);
+        routerCubit.goComic();
+      },
       child: ClipRect(
         child: Column(
           children: [

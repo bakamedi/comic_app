@@ -6,6 +6,7 @@ import 'data/data_source/providers/comic_provider.dart';
 import 'data/helpers/http/http_helper.dart';
 import 'data/repositories_impl/comic_repository_impl.dart';
 import 'domain/repositories/comic_repository.dart';
+import 'presentation/modules/blocs/comic_item/comic_item_cubit.dart';
 import 'presentation/modules/blocs/home_bloc/home_cubit.dart';
 import 'presentation/router/app_routers_config.dart';
 
@@ -27,6 +28,9 @@ void _injectCubits() {
     HomeCubit(
       comicRepository: _getIt<ComicRepository>(),
     ),
+  );
+  _getIt.registerSingleton(
+    ComicItemCubit(),
   );
 }
 

@@ -19,7 +19,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final homeCubit = context.watch<HomeCubit>();
+    final HomeCubit homeCubit = context.watch<HomeCubit>();
     return Scaffold(
       backgroundColor: ThemeAppColors.greyBackground,
       body: BlocBuilder<HomeCubit, HomeState>(
