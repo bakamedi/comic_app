@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
 import '../../../../../domain/responses/comic_data/issues_data_response.dart';
+import '../../../../global/widgets/states_w/shimmer_gw.dart';
 import '../../../../global/widgets/states_w/state_body_gw.dart';
 import '../../../../global/extensions/widgets_ext.dart';
 import '../../../blocs/home_bloc/home_cubit.dart';
@@ -20,6 +21,8 @@ class ComicsW extends StatelessWidget {
   Widget build(BuildContext context) {
     return StateBodyGW(
       state: homeCubit.stateType,
+      loadingWidget: const CardShimmer(),
+      isSliver: true,
       child: homeCubit.issuesDataResponse == null
           ? adaptativeScreen.hp(1).h.sliverBox
           : SliverList.builder(

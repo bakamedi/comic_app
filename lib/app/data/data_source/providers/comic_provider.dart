@@ -60,32 +60,39 @@ class ComicProvider {
   Future<Either<Failure, IssueDetailDataResponse>> getComicDetail({
     required String detailUrlPath,
   }) async {
-    final result = await _httpHelper.request(
-      detailUrlPath,
-    );
-    return result.when(
-      success: (status, data) {
-        final issuesDetailData = issueDetailDataResponseFromJson(data);
-        print(issuesDetailData);
-        return Either.right(
-          issuesDetailData,
-        );
-      },
-      networkError: (stackTrace) {
-        return const Either.left(
-          Failure.network(),
-        );
-      },
-      timeOut: (timeOut) {
-        return const Either.left(
-          Failure.timeout(),
-        );
-      },
-      unhandledError: (exception, stackTrace) {
-        return const Either.left(
-          Failure.unknown(),
-        );
-      },
-    );
+    try {
+      final result = await _httpHelper.request(
+        '/issue/$detailUrlPath',
+      );
+      return result.when(
+        success: (status, data) {
+          print(data);
+          final issuesDetailData = issueDetailDataResponseFromJson(data);
+          print(issuesDetailData);
+          return Either.right(
+            issuesDetailData,
+          );
+        },
+        networkError: (stackTrace) {
+          return const Either.left(
+            Failure.network(),
+          );
+        },
+        timeOut: (timeOut) {
+          return const Either.left(
+            Failure.timeout(),
+          );
+        },
+        unhandledError: (exception, stackTrace) {
+          return const Either.left(
+            Failure.unknown(),
+          );
+        },
+      );
+    } catch (e) {
+      return const Either.left(
+        Failure.unknown(),
+      );
+    }
   }
 }

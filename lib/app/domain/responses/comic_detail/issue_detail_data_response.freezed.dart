@@ -21,13 +21,21 @@ IssueDetailDataResponse _$IssueDetailDataResponseFromJson(
 
 /// @nodoc
 mixin _$IssueDetailDataResponse {
+  @JsonKey(name: "error")
   String? get error => throw _privateConstructorUsedError;
+  @JsonKey(name: "limit")
   int? get limit => throw _privateConstructorUsedError;
+  @JsonKey(name: "offset")
   int? get offset => throw _privateConstructorUsedError;
+  @JsonKey(name: "number_of_page_results")
   int? get numberOfPageResults => throw _privateConstructorUsedError;
+  @JsonKey(name: "number_of_total_results")
   int? get numberOfTotalResults => throw _privateConstructorUsedError;
+  @JsonKey(name: "status_code")
   int? get statusCode => throw _privateConstructorUsedError;
+  @JsonKey(name: "results")
   Results? get results => throw _privateConstructorUsedError;
+  @JsonKey(name: "version")
   String? get version => throw _privateConstructorUsedError;
 
   /// Serializes this IssueDetailDataResponse to a JSON map.
@@ -47,14 +55,14 @@ abstract class $IssueDetailDataResponseCopyWith<$Res> {
       _$IssueDetailDataResponseCopyWithImpl<$Res, IssueDetailDataResponse>;
   @useResult
   $Res call(
-      {String? error,
-      int? limit,
-      int? offset,
-      int? numberOfPageResults,
-      int? numberOfTotalResults,
-      int? statusCode,
-      Results? results,
-      String? version});
+      {@JsonKey(name: "error") String? error,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "offset") int? offset,
+      @JsonKey(name: "number_of_page_results") int? numberOfPageResults,
+      @JsonKey(name: "number_of_total_results") int? numberOfTotalResults,
+      @JsonKey(name: "status_code") int? statusCode,
+      @JsonKey(name: "results") Results? results,
+      @JsonKey(name: "version") String? version});
 
   $ResultsCopyWith<$Res>? get results;
 }
@@ -145,14 +153,14 @@ abstract class _$$IssueDetailDataResponseImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? error,
-      int? limit,
-      int? offset,
-      int? numberOfPageResults,
-      int? numberOfTotalResults,
-      int? statusCode,
-      Results? results,
-      String? version});
+      {@JsonKey(name: "error") String? error,
+      @JsonKey(name: "limit") int? limit,
+      @JsonKey(name: "offset") int? offset,
+      @JsonKey(name: "number_of_page_results") int? numberOfPageResults,
+      @JsonKey(name: "number_of_total_results") int? numberOfTotalResults,
+      @JsonKey(name: "status_code") int? statusCode,
+      @JsonKey(name: "results") Results? results,
+      @JsonKey(name: "version") String? version});
 
   @override
   $ResultsCopyWith<$Res>? get results;
@@ -223,33 +231,41 @@ class __$$IssueDetailDataResponseImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$IssueDetailDataResponseImpl implements _IssueDetailDataResponse {
   const _$IssueDetailDataResponseImpl(
-      {this.error,
-      this.limit,
-      this.offset,
-      this.numberOfPageResults,
-      this.numberOfTotalResults,
-      this.statusCode,
-      this.results,
-      this.version});
+      {@JsonKey(name: "error") this.error,
+      @JsonKey(name: "limit") this.limit,
+      @JsonKey(name: "offset") this.offset,
+      @JsonKey(name: "number_of_page_results") this.numberOfPageResults,
+      @JsonKey(name: "number_of_total_results") this.numberOfTotalResults,
+      @JsonKey(name: "status_code") this.statusCode,
+      @JsonKey(name: "results") this.results,
+      @JsonKey(name: "version") this.version});
 
   factory _$IssueDetailDataResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$IssueDetailDataResponseImplFromJson(json);
 
   @override
+  @JsonKey(name: "error")
   final String? error;
   @override
+  @JsonKey(name: "limit")
   final int? limit;
   @override
+  @JsonKey(name: "offset")
   final int? offset;
   @override
+  @JsonKey(name: "number_of_page_results")
   final int? numberOfPageResults;
   @override
+  @JsonKey(name: "number_of_total_results")
   final int? numberOfTotalResults;
   @override
+  @JsonKey(name: "status_code")
   final int? statusCode;
   @override
+  @JsonKey(name: "results")
   final Results? results;
   @override
+  @JsonKey(name: "version")
   final String? version;
 
   @override
@@ -299,33 +315,42 @@ class _$IssueDetailDataResponseImpl implements _IssueDetailDataResponse {
 
 abstract class _IssueDetailDataResponse implements IssueDetailDataResponse {
   const factory _IssueDetailDataResponse(
-      {final String? error,
-      final int? limit,
-      final int? offset,
-      final int? numberOfPageResults,
-      final int? numberOfTotalResults,
-      final int? statusCode,
-      final Results? results,
+      {@JsonKey(name: "error") final String? error,
+      @JsonKey(name: "limit") final int? limit,
+      @JsonKey(name: "offset") final int? offset,
+      @JsonKey(name: "number_of_page_results") final int? numberOfPageResults,
+      @JsonKey(name: "number_of_total_results") final int? numberOfTotalResults,
+      @JsonKey(name: "status_code") final int? statusCode,
+      @JsonKey(name: "results") final Results? results,
+      @JsonKey(name: "version")
       final String? version}) = _$IssueDetailDataResponseImpl;
 
   factory _IssueDetailDataResponse.fromJson(Map<String, dynamic> json) =
       _$IssueDetailDataResponseImpl.fromJson;
 
   @override
+  @JsonKey(name: "error")
   String? get error;
   @override
+  @JsonKey(name: "limit")
   int? get limit;
   @override
+  @JsonKey(name: "offset")
   int? get offset;
   @override
+  @JsonKey(name: "number_of_page_results")
   int? get numberOfPageResults;
   @override
+  @JsonKey(name: "number_of_total_results")
   int? get numberOfTotalResults;
   @override
+  @JsonKey(name: "status_code")
   int? get statusCode;
   @override
+  @JsonKey(name: "results")
   Results? get results;
   @override
+  @JsonKey(name: "version")
   String? get version;
 
   /// Create a copy of IssueDetailDataResponse
@@ -342,36 +367,67 @@ Results _$ResultsFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Results {
+  @JsonKey(name: "aliases")
   dynamic get aliases => throw _privateConstructorUsedError;
+  @JsonKey(name: "api_detail_url")
   String? get apiDetailUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "associated_images")
   List<dynamic>? get associatedImages => throw _privateConstructorUsedError;
+  @JsonKey(name: "character_credits")
   List<dynamic>? get characterCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "character_died_in")
   List<dynamic>? get characterDiedIn => throw _privateConstructorUsedError;
+  @JsonKey(name: "concept_credits")
   List<dynamic>? get conceptCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "cover_date")
   DateTime? get coverDate => throw _privateConstructorUsedError;
+  @JsonKey(name: "date_added")
   DateTime? get dateAdded => throw _privateConstructorUsedError;
+  @JsonKey(name: "date_last_updated")
   DateTime? get dateLastUpdated => throw _privateConstructorUsedError;
+  @JsonKey(name: "deck")
   dynamic get deck => throw _privateConstructorUsedError;
+  @JsonKey(name: "description")
   dynamic get description => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_characters")
   dynamic get firstAppearanceCharacters => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_concepts")
   dynamic get firstAppearanceConcepts => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_locations")
   dynamic get firstAppearanceLocations => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_objects")
   dynamic get firstAppearanceObjects => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_storyarcs")
   dynamic get firstAppearanceStoryarcs => throw _privateConstructorUsedError;
+  @JsonKey(name: "first_appearance_teams")
   dynamic get firstAppearanceTeams => throw _privateConstructorUsedError;
+  @JsonKey(name: "has_staff_review")
   bool? get hasStaffReview => throw _privateConstructorUsedError;
+  @JsonKey(name: "id")
   int? get id => throw _privateConstructorUsedError;
+  @JsonKey(name: "image")
   Image? get image => throw _privateConstructorUsedError;
+  @JsonKey(name: "issue_number")
   String? get issueNumber => throw _privateConstructorUsedError;
-  List<dynamic>? get locationCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "location_credits")
+  List<Volume>? get locationCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "name")
   String? get name => throw _privateConstructorUsedError;
+  @JsonKey(name: "object_credits")
   List<dynamic>? get objectCredits => throw _privateConstructorUsedError;
-  List<dynamic>? get personCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "person_credits")
+  List<Volume>? get personCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "site_detail_url")
   String? get siteDetailUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "store_date")
   DateTime? get storeDate => throw _privateConstructorUsedError;
+  @JsonKey(name: "story_arc_credits")
   List<dynamic>? get storyArcCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "team_credits")
   List<dynamic>? get teamCredits => throw _privateConstructorUsedError;
+  @JsonKey(name: "team_disbanded_in")
   List<dynamic>? get teamDisbandedIn => throw _privateConstructorUsedError;
+  @JsonKey(name: "volume")
   Volume? get volume => throw _privateConstructorUsedError;
 
   /// Serializes this Results to a JSON map.
@@ -389,37 +445,41 @@ abstract class $ResultsCopyWith<$Res> {
       _$ResultsCopyWithImpl<$Res, Results>;
   @useResult
   $Res call(
-      {dynamic aliases,
-      String? apiDetailUrl,
-      List<dynamic>? associatedImages,
-      List<dynamic>? characterCredits,
-      List<dynamic>? characterDiedIn,
-      List<dynamic>? conceptCredits,
-      DateTime? coverDate,
-      DateTime? dateAdded,
-      DateTime? dateLastUpdated,
-      dynamic deck,
-      dynamic description,
+      {@JsonKey(name: "aliases") dynamic aliases,
+      @JsonKey(name: "api_detail_url") String? apiDetailUrl,
+      @JsonKey(name: "associated_images") List<dynamic>? associatedImages,
+      @JsonKey(name: "character_credits") List<dynamic>? characterCredits,
+      @JsonKey(name: "character_died_in") List<dynamic>? characterDiedIn,
+      @JsonKey(name: "concept_credits") List<dynamic>? conceptCredits,
+      @JsonKey(name: "cover_date") DateTime? coverDate,
+      @JsonKey(name: "date_added") DateTime? dateAdded,
+      @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
+      @JsonKey(name: "deck") dynamic deck,
+      @JsonKey(name: "description") dynamic description,
+      @JsonKey(name: "first_appearance_characters")
       dynamic firstAppearanceCharacters,
+      @JsonKey(name: "first_appearance_concepts")
       dynamic firstAppearanceConcepts,
+      @JsonKey(name: "first_appearance_locations")
       dynamic firstAppearanceLocations,
-      dynamic firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_objects") dynamic firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_storyarcs")
       dynamic firstAppearanceStoryarcs,
-      dynamic firstAppearanceTeams,
-      bool? hasStaffReview,
-      int? id,
-      Image? image,
-      String? issueNumber,
-      List<dynamic>? locationCredits,
-      String? name,
-      List<dynamic>? objectCredits,
-      List<dynamic>? personCredits,
-      String? siteDetailUrl,
-      DateTime? storeDate,
-      List<dynamic>? storyArcCredits,
-      List<dynamic>? teamCredits,
-      List<dynamic>? teamDisbandedIn,
-      Volume? volume});
+      @JsonKey(name: "first_appearance_teams") dynamic firstAppearanceTeams,
+      @JsonKey(name: "has_staff_review") bool? hasStaffReview,
+      @JsonKey(name: "id") int? id,
+      @JsonKey(name: "image") Image? image,
+      @JsonKey(name: "issue_number") String? issueNumber,
+      @JsonKey(name: "location_credits") List<Volume>? locationCredits,
+      @JsonKey(name: "name") String? name,
+      @JsonKey(name: "object_credits") List<dynamic>? objectCredits,
+      @JsonKey(name: "person_credits") List<Volume>? personCredits,
+      @JsonKey(name: "site_detail_url") String? siteDetailUrl,
+      @JsonKey(name: "store_date") DateTime? storeDate,
+      @JsonKey(name: "story_arc_credits") List<dynamic>? storyArcCredits,
+      @JsonKey(name: "team_credits") List<dynamic>? teamCredits,
+      @JsonKey(name: "team_disbanded_in") List<dynamic>? teamDisbandedIn,
+      @JsonKey(name: "volume") Volume? volume});
 
   $ImageCopyWith<$Res>? get image;
   $VolumeCopyWith<$Res>? get volume;
@@ -560,7 +620,7 @@ class _$ResultsCopyWithImpl<$Res, $Val extends Results>
       locationCredits: freezed == locationCredits
           ? _value.locationCredits
           : locationCredits // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Volume>?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -572,7 +632,7 @@ class _$ResultsCopyWithImpl<$Res, $Val extends Results>
       personCredits: freezed == personCredits
           ? _value.personCredits
           : personCredits // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Volume>?,
       siteDetailUrl: freezed == siteDetailUrl
           ? _value.siteDetailUrl
           : siteDetailUrl // ignore: cast_nullable_to_non_nullable
@@ -637,37 +697,41 @@ abstract class _$$ResultsImplCopyWith<$Res> implements $ResultsCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {dynamic aliases,
-      String? apiDetailUrl,
-      List<dynamic>? associatedImages,
-      List<dynamic>? characterCredits,
-      List<dynamic>? characterDiedIn,
-      List<dynamic>? conceptCredits,
-      DateTime? coverDate,
-      DateTime? dateAdded,
-      DateTime? dateLastUpdated,
-      dynamic deck,
-      dynamic description,
+      {@JsonKey(name: "aliases") dynamic aliases,
+      @JsonKey(name: "api_detail_url") String? apiDetailUrl,
+      @JsonKey(name: "associated_images") List<dynamic>? associatedImages,
+      @JsonKey(name: "character_credits") List<dynamic>? characterCredits,
+      @JsonKey(name: "character_died_in") List<dynamic>? characterDiedIn,
+      @JsonKey(name: "concept_credits") List<dynamic>? conceptCredits,
+      @JsonKey(name: "cover_date") DateTime? coverDate,
+      @JsonKey(name: "date_added") DateTime? dateAdded,
+      @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
+      @JsonKey(name: "deck") dynamic deck,
+      @JsonKey(name: "description") dynamic description,
+      @JsonKey(name: "first_appearance_characters")
       dynamic firstAppearanceCharacters,
+      @JsonKey(name: "first_appearance_concepts")
       dynamic firstAppearanceConcepts,
+      @JsonKey(name: "first_appearance_locations")
       dynamic firstAppearanceLocations,
-      dynamic firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_objects") dynamic firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_storyarcs")
       dynamic firstAppearanceStoryarcs,
-      dynamic firstAppearanceTeams,
-      bool? hasStaffReview,
-      int? id,
-      Image? image,
-      String? issueNumber,
-      List<dynamic>? locationCredits,
-      String? name,
-      List<dynamic>? objectCredits,
-      List<dynamic>? personCredits,
-      String? siteDetailUrl,
-      DateTime? storeDate,
-      List<dynamic>? storyArcCredits,
-      List<dynamic>? teamCredits,
-      List<dynamic>? teamDisbandedIn,
-      Volume? volume});
+      @JsonKey(name: "first_appearance_teams") dynamic firstAppearanceTeams,
+      @JsonKey(name: "has_staff_review") bool? hasStaffReview,
+      @JsonKey(name: "id") int? id,
+      @JsonKey(name: "image") Image? image,
+      @JsonKey(name: "issue_number") String? issueNumber,
+      @JsonKey(name: "location_credits") List<Volume>? locationCredits,
+      @JsonKey(name: "name") String? name,
+      @JsonKey(name: "object_credits") List<dynamic>? objectCredits,
+      @JsonKey(name: "person_credits") List<Volume>? personCredits,
+      @JsonKey(name: "site_detail_url") String? siteDetailUrl,
+      @JsonKey(name: "store_date") DateTime? storeDate,
+      @JsonKey(name: "story_arc_credits") List<dynamic>? storyArcCredits,
+      @JsonKey(name: "team_credits") List<dynamic>? teamCredits,
+      @JsonKey(name: "team_disbanded_in") List<dynamic>? teamDisbandedIn,
+      @JsonKey(name: "volume") Volume? volume});
 
   @override
   $ImageCopyWith<$Res>? get image;
@@ -808,7 +872,7 @@ class __$$ResultsImplCopyWithImpl<$Res>
       locationCredits: freezed == locationCredits
           ? _value._locationCredits
           : locationCredits // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Volume>?,
       name: freezed == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -820,7 +884,7 @@ class __$$ResultsImplCopyWithImpl<$Res>
       personCredits: freezed == personCredits
           ? _value._personCredits
           : personCredits // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>?,
+              as List<Volume>?,
       siteDetailUrl: freezed == siteDetailUrl
           ? _value.siteDetailUrl
           : siteDetailUrl // ignore: cast_nullable_to_non_nullable
@@ -853,37 +917,40 @@ class __$$ResultsImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ResultsImpl implements _Results {
   const _$ResultsImpl(
-      {this.aliases,
-      this.apiDetailUrl,
-      final List<dynamic>? associatedImages,
-      final List<dynamic>? characterCredits,
-      final List<dynamic>? characterDiedIn,
-      final List<dynamic>? conceptCredits,
-      this.coverDate,
-      this.dateAdded,
-      this.dateLastUpdated,
-      this.deck,
-      this.description,
+      {@JsonKey(name: "aliases") this.aliases,
+      @JsonKey(name: "api_detail_url") this.apiDetailUrl,
+      @JsonKey(name: "associated_images") final List<dynamic>? associatedImages,
+      @JsonKey(name: "character_credits") final List<dynamic>? characterCredits,
+      @JsonKey(name: "character_died_in") final List<dynamic>? characterDiedIn,
+      @JsonKey(name: "concept_credits") final List<dynamic>? conceptCredits,
+      @JsonKey(name: "cover_date") this.coverDate,
+      @JsonKey(name: "date_added") this.dateAdded,
+      @JsonKey(name: "date_last_updated") this.dateLastUpdated,
+      @JsonKey(name: "deck") this.deck,
+      @JsonKey(name: "description") this.description,
+      @JsonKey(name: "first_appearance_characters")
       this.firstAppearanceCharacters,
-      this.firstAppearanceConcepts,
+      @JsonKey(name: "first_appearance_concepts") this.firstAppearanceConcepts,
+      @JsonKey(name: "first_appearance_locations")
       this.firstAppearanceLocations,
-      this.firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_objects") this.firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_storyarcs")
       this.firstAppearanceStoryarcs,
-      this.firstAppearanceTeams,
-      this.hasStaffReview,
-      this.id,
-      this.image,
-      this.issueNumber,
-      final List<dynamic>? locationCredits,
-      this.name,
-      final List<dynamic>? objectCredits,
-      final List<dynamic>? personCredits,
-      this.siteDetailUrl,
-      this.storeDate,
-      final List<dynamic>? storyArcCredits,
-      final List<dynamic>? teamCredits,
-      final List<dynamic>? teamDisbandedIn,
-      this.volume})
+      @JsonKey(name: "first_appearance_teams") this.firstAppearanceTeams,
+      @JsonKey(name: "has_staff_review") this.hasStaffReview,
+      @JsonKey(name: "id") this.id,
+      @JsonKey(name: "image") this.image,
+      @JsonKey(name: "issue_number") this.issueNumber,
+      @JsonKey(name: "location_credits") final List<Volume>? locationCredits,
+      @JsonKey(name: "name") this.name,
+      @JsonKey(name: "object_credits") final List<dynamic>? objectCredits,
+      @JsonKey(name: "person_credits") final List<Volume>? personCredits,
+      @JsonKey(name: "site_detail_url") this.siteDetailUrl,
+      @JsonKey(name: "store_date") this.storeDate,
+      @JsonKey(name: "story_arc_credits") final List<dynamic>? storyArcCredits,
+      @JsonKey(name: "team_credits") final List<dynamic>? teamCredits,
+      @JsonKey(name: "team_disbanded_in") final List<dynamic>? teamDisbandedIn,
+      @JsonKey(name: "volume") this.volume})
       : _associatedImages = associatedImages,
         _characterCredits = characterCredits,
         _characterDiedIn = characterDiedIn,
@@ -899,11 +966,14 @@ class _$ResultsImpl implements _Results {
       _$$ResultsImplFromJson(json);
 
   @override
+  @JsonKey(name: "aliases")
   final dynamic aliases;
   @override
+  @JsonKey(name: "api_detail_url")
   final String? apiDetailUrl;
   final List<dynamic>? _associatedImages;
   @override
+  @JsonKey(name: "associated_images")
   List<dynamic>? get associatedImages {
     final value = _associatedImages;
     if (value == null) return null;
@@ -915,6 +985,7 @@ class _$ResultsImpl implements _Results {
 
   final List<dynamic>? _characterCredits;
   @override
+  @JsonKey(name: "character_credits")
   List<dynamic>? get characterCredits {
     final value = _characterCredits;
     if (value == null) return null;
@@ -926,6 +997,7 @@ class _$ResultsImpl implements _Results {
 
   final List<dynamic>? _characterDiedIn;
   @override
+  @JsonKey(name: "character_died_in")
   List<dynamic>? get characterDiedIn {
     final value = _characterDiedIn;
     if (value == null) return null;
@@ -936,6 +1008,7 @@ class _$ResultsImpl implements _Results {
 
   final List<dynamic>? _conceptCredits;
   @override
+  @JsonKey(name: "concept_credits")
   List<dynamic>? get conceptCredits {
     final value = _conceptCredits;
     if (value == null) return null;
@@ -945,38 +1018,54 @@ class _$ResultsImpl implements _Results {
   }
 
   @override
+  @JsonKey(name: "cover_date")
   final DateTime? coverDate;
   @override
+  @JsonKey(name: "date_added")
   final DateTime? dateAdded;
   @override
+  @JsonKey(name: "date_last_updated")
   final DateTime? dateLastUpdated;
   @override
+  @JsonKey(name: "deck")
   final dynamic deck;
   @override
+  @JsonKey(name: "description")
   final dynamic description;
   @override
+  @JsonKey(name: "first_appearance_characters")
   final dynamic firstAppearanceCharacters;
   @override
+  @JsonKey(name: "first_appearance_concepts")
   final dynamic firstAppearanceConcepts;
   @override
+  @JsonKey(name: "first_appearance_locations")
   final dynamic firstAppearanceLocations;
   @override
+  @JsonKey(name: "first_appearance_objects")
   final dynamic firstAppearanceObjects;
   @override
+  @JsonKey(name: "first_appearance_storyarcs")
   final dynamic firstAppearanceStoryarcs;
   @override
+  @JsonKey(name: "first_appearance_teams")
   final dynamic firstAppearanceTeams;
   @override
+  @JsonKey(name: "has_staff_review")
   final bool? hasStaffReview;
   @override
+  @JsonKey(name: "id")
   final int? id;
   @override
+  @JsonKey(name: "image")
   final Image? image;
   @override
+  @JsonKey(name: "issue_number")
   final String? issueNumber;
-  final List<dynamic>? _locationCredits;
+  final List<Volume>? _locationCredits;
   @override
-  List<dynamic>? get locationCredits {
+  @JsonKey(name: "location_credits")
+  List<Volume>? get locationCredits {
     final value = _locationCredits;
     if (value == null) return null;
     if (_locationCredits is EqualUnmodifiableListView) return _locationCredits;
@@ -985,9 +1074,11 @@ class _$ResultsImpl implements _Results {
   }
 
   @override
+  @JsonKey(name: "name")
   final String? name;
   final List<dynamic>? _objectCredits;
   @override
+  @JsonKey(name: "object_credits")
   List<dynamic>? get objectCredits {
     final value = _objectCredits;
     if (value == null) return null;
@@ -996,9 +1087,10 @@ class _$ResultsImpl implements _Results {
     return EqualUnmodifiableListView(value);
   }
 
-  final List<dynamic>? _personCredits;
+  final List<Volume>? _personCredits;
   @override
-  List<dynamic>? get personCredits {
+  @JsonKey(name: "person_credits")
+  List<Volume>? get personCredits {
     final value = _personCredits;
     if (value == null) return null;
     if (_personCredits is EqualUnmodifiableListView) return _personCredits;
@@ -1007,11 +1099,14 @@ class _$ResultsImpl implements _Results {
   }
 
   @override
+  @JsonKey(name: "site_detail_url")
   final String? siteDetailUrl;
   @override
+  @JsonKey(name: "store_date")
   final DateTime? storeDate;
   final List<dynamic>? _storyArcCredits;
   @override
+  @JsonKey(name: "story_arc_credits")
   List<dynamic>? get storyArcCredits {
     final value = _storyArcCredits;
     if (value == null) return null;
@@ -1022,6 +1117,7 @@ class _$ResultsImpl implements _Results {
 
   final List<dynamic>? _teamCredits;
   @override
+  @JsonKey(name: "team_credits")
   List<dynamic>? get teamCredits {
     final value = _teamCredits;
     if (value == null) return null;
@@ -1032,6 +1128,7 @@ class _$ResultsImpl implements _Results {
 
   final List<dynamic>? _teamDisbandedIn;
   @override
+  @JsonKey(name: "team_disbanded_in")
   List<dynamic>? get teamDisbandedIn {
     final value = _teamDisbandedIn;
     if (value == null) return null;
@@ -1041,6 +1138,7 @@ class _$ResultsImpl implements _Results {
   }
 
   @override
+  @JsonKey(name: "volume")
   final Volume? volume;
 
   @override
@@ -1166,101 +1264,138 @@ class _$ResultsImpl implements _Results {
 
 abstract class _Results implements Results {
   const factory _Results(
-      {final dynamic aliases,
-      final String? apiDetailUrl,
-      final List<dynamic>? associatedImages,
-      final List<dynamic>? characterCredits,
-      final List<dynamic>? characterDiedIn,
-      final List<dynamic>? conceptCredits,
-      final DateTime? coverDate,
-      final DateTime? dateAdded,
-      final DateTime? dateLastUpdated,
-      final dynamic deck,
-      final dynamic description,
+      {@JsonKey(name: "aliases") final dynamic aliases,
+      @JsonKey(name: "api_detail_url") final String? apiDetailUrl,
+      @JsonKey(name: "associated_images") final List<dynamic>? associatedImages,
+      @JsonKey(name: "character_credits") final List<dynamic>? characterCredits,
+      @JsonKey(name: "character_died_in") final List<dynamic>? characterDiedIn,
+      @JsonKey(name: "concept_credits") final List<dynamic>? conceptCredits,
+      @JsonKey(name: "cover_date") final DateTime? coverDate,
+      @JsonKey(name: "date_added") final DateTime? dateAdded,
+      @JsonKey(name: "date_last_updated") final DateTime? dateLastUpdated,
+      @JsonKey(name: "deck") final dynamic deck,
+      @JsonKey(name: "description") final dynamic description,
+      @JsonKey(name: "first_appearance_characters")
       final dynamic firstAppearanceCharacters,
+      @JsonKey(name: "first_appearance_concepts")
       final dynamic firstAppearanceConcepts,
+      @JsonKey(name: "first_appearance_locations")
       final dynamic firstAppearanceLocations,
+      @JsonKey(name: "first_appearance_objects")
       final dynamic firstAppearanceObjects,
+      @JsonKey(name: "first_appearance_storyarcs")
       final dynamic firstAppearanceStoryarcs,
+      @JsonKey(name: "first_appearance_teams")
       final dynamic firstAppearanceTeams,
-      final bool? hasStaffReview,
-      final int? id,
-      final Image? image,
-      final String? issueNumber,
-      final List<dynamic>? locationCredits,
-      final String? name,
-      final List<dynamic>? objectCredits,
-      final List<dynamic>? personCredits,
-      final String? siteDetailUrl,
-      final DateTime? storeDate,
-      final List<dynamic>? storyArcCredits,
-      final List<dynamic>? teamCredits,
-      final List<dynamic>? teamDisbandedIn,
-      final Volume? volume}) = _$ResultsImpl;
+      @JsonKey(name: "has_staff_review") final bool? hasStaffReview,
+      @JsonKey(name: "id") final int? id,
+      @JsonKey(name: "image") final Image? image,
+      @JsonKey(name: "issue_number") final String? issueNumber,
+      @JsonKey(name: "location_credits") final List<Volume>? locationCredits,
+      @JsonKey(name: "name") final String? name,
+      @JsonKey(name: "object_credits") final List<dynamic>? objectCredits,
+      @JsonKey(name: "person_credits") final List<Volume>? personCredits,
+      @JsonKey(name: "site_detail_url") final String? siteDetailUrl,
+      @JsonKey(name: "store_date") final DateTime? storeDate,
+      @JsonKey(name: "story_arc_credits") final List<dynamic>? storyArcCredits,
+      @JsonKey(name: "team_credits") final List<dynamic>? teamCredits,
+      @JsonKey(name: "team_disbanded_in") final List<dynamic>? teamDisbandedIn,
+      @JsonKey(name: "volume") final Volume? volume}) = _$ResultsImpl;
 
   factory _Results.fromJson(Map<String, dynamic> json) = _$ResultsImpl.fromJson;
 
   @override
+  @JsonKey(name: "aliases")
   dynamic get aliases;
   @override
+  @JsonKey(name: "api_detail_url")
   String? get apiDetailUrl;
   @override
+  @JsonKey(name: "associated_images")
   List<dynamic>? get associatedImages;
   @override
+  @JsonKey(name: "character_credits")
   List<dynamic>? get characterCredits;
   @override
+  @JsonKey(name: "character_died_in")
   List<dynamic>? get characterDiedIn;
   @override
+  @JsonKey(name: "concept_credits")
   List<dynamic>? get conceptCredits;
   @override
+  @JsonKey(name: "cover_date")
   DateTime? get coverDate;
   @override
+  @JsonKey(name: "date_added")
   DateTime? get dateAdded;
   @override
+  @JsonKey(name: "date_last_updated")
   DateTime? get dateLastUpdated;
   @override
+  @JsonKey(name: "deck")
   dynamic get deck;
   @override
+  @JsonKey(name: "description")
   dynamic get description;
   @override
+  @JsonKey(name: "first_appearance_characters")
   dynamic get firstAppearanceCharacters;
   @override
+  @JsonKey(name: "first_appearance_concepts")
   dynamic get firstAppearanceConcepts;
   @override
+  @JsonKey(name: "first_appearance_locations")
   dynamic get firstAppearanceLocations;
   @override
+  @JsonKey(name: "first_appearance_objects")
   dynamic get firstAppearanceObjects;
   @override
+  @JsonKey(name: "first_appearance_storyarcs")
   dynamic get firstAppearanceStoryarcs;
   @override
+  @JsonKey(name: "first_appearance_teams")
   dynamic get firstAppearanceTeams;
   @override
+  @JsonKey(name: "has_staff_review")
   bool? get hasStaffReview;
   @override
+  @JsonKey(name: "id")
   int? get id;
   @override
+  @JsonKey(name: "image")
   Image? get image;
   @override
+  @JsonKey(name: "issue_number")
   String? get issueNumber;
   @override
-  List<dynamic>? get locationCredits;
+  @JsonKey(name: "location_credits")
+  List<Volume>? get locationCredits;
   @override
+  @JsonKey(name: "name")
   String? get name;
   @override
+  @JsonKey(name: "object_credits")
   List<dynamic>? get objectCredits;
   @override
-  List<dynamic>? get personCredits;
+  @JsonKey(name: "person_credits")
+  List<Volume>? get personCredits;
   @override
+  @JsonKey(name: "site_detail_url")
   String? get siteDetailUrl;
   @override
+  @JsonKey(name: "store_date")
   DateTime? get storeDate;
   @override
+  @JsonKey(name: "story_arc_credits")
   List<dynamic>? get storyArcCredits;
   @override
+  @JsonKey(name: "team_credits")
   List<dynamic>? get teamCredits;
   @override
+  @JsonKey(name: "team_disbanded_in")
   List<dynamic>? get teamDisbandedIn;
   @override
+  @JsonKey(name: "volume")
   Volume? get volume;
 
   /// Create a copy of Results
@@ -1277,15 +1412,25 @@ Image _$ImageFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Image {
+  @JsonKey(name: "icon_url")
   String? get iconUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "medium_url")
   String? get mediumUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "screen_url")
   String? get screenUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "screen_large_url")
   String? get screenLargeUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "small_url")
   String? get smallUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "super_url")
   String? get superUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "thumb_url")
   String? get thumbUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "tiny_url")
   String? get tinyUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "original_url")
   String? get originalUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "image_tags")
   String? get imageTags => throw _privateConstructorUsedError;
 
   /// Serializes this Image to a JSON map.
@@ -1303,16 +1448,16 @@ abstract class $ImageCopyWith<$Res> {
       _$ImageCopyWithImpl<$Res, Image>;
   @useResult
   $Res call(
-      {String? iconUrl,
-      String? mediumUrl,
-      String? screenUrl,
-      String? screenLargeUrl,
-      String? smallUrl,
-      String? superUrl,
-      String? thumbUrl,
-      String? tinyUrl,
-      String? originalUrl,
-      String? imageTags});
+      {@JsonKey(name: "icon_url") String? iconUrl,
+      @JsonKey(name: "medium_url") String? mediumUrl,
+      @JsonKey(name: "screen_url") String? screenUrl,
+      @JsonKey(name: "screen_large_url") String? screenLargeUrl,
+      @JsonKey(name: "small_url") String? smallUrl,
+      @JsonKey(name: "super_url") String? superUrl,
+      @JsonKey(name: "thumb_url") String? thumbUrl,
+      @JsonKey(name: "tiny_url") String? tinyUrl,
+      @JsonKey(name: "original_url") String? originalUrl,
+      @JsonKey(name: "image_tags") String? imageTags});
 }
 
 /// @nodoc
@@ -1394,16 +1539,16 @@ abstract class _$$ImageImplCopyWith<$Res> implements $ImageCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String? iconUrl,
-      String? mediumUrl,
-      String? screenUrl,
-      String? screenLargeUrl,
-      String? smallUrl,
-      String? superUrl,
-      String? thumbUrl,
-      String? tinyUrl,
-      String? originalUrl,
-      String? imageTags});
+      {@JsonKey(name: "icon_url") String? iconUrl,
+      @JsonKey(name: "medium_url") String? mediumUrl,
+      @JsonKey(name: "screen_url") String? screenUrl,
+      @JsonKey(name: "screen_large_url") String? screenLargeUrl,
+      @JsonKey(name: "small_url") String? smallUrl,
+      @JsonKey(name: "super_url") String? superUrl,
+      @JsonKey(name: "thumb_url") String? thumbUrl,
+      @JsonKey(name: "tiny_url") String? tinyUrl,
+      @JsonKey(name: "original_url") String? originalUrl,
+      @JsonKey(name: "image_tags") String? imageTags});
 }
 
 /// @nodoc
@@ -1479,39 +1624,49 @@ class __$$ImageImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ImageImpl implements _Image {
   const _$ImageImpl(
-      {this.iconUrl,
-      this.mediumUrl,
-      this.screenUrl,
-      this.screenLargeUrl,
-      this.smallUrl,
-      this.superUrl,
-      this.thumbUrl,
-      this.tinyUrl,
-      this.originalUrl,
-      this.imageTags});
+      {@JsonKey(name: "icon_url") this.iconUrl,
+      @JsonKey(name: "medium_url") this.mediumUrl,
+      @JsonKey(name: "screen_url") this.screenUrl,
+      @JsonKey(name: "screen_large_url") this.screenLargeUrl,
+      @JsonKey(name: "small_url") this.smallUrl,
+      @JsonKey(name: "super_url") this.superUrl,
+      @JsonKey(name: "thumb_url") this.thumbUrl,
+      @JsonKey(name: "tiny_url") this.tinyUrl,
+      @JsonKey(name: "original_url") this.originalUrl,
+      @JsonKey(name: "image_tags") this.imageTags});
 
   factory _$ImageImpl.fromJson(Map<String, dynamic> json) =>
       _$$ImageImplFromJson(json);
 
   @override
+  @JsonKey(name: "icon_url")
   final String? iconUrl;
   @override
+  @JsonKey(name: "medium_url")
   final String? mediumUrl;
   @override
+  @JsonKey(name: "screen_url")
   final String? screenUrl;
   @override
+  @JsonKey(name: "screen_large_url")
   final String? screenLargeUrl;
   @override
+  @JsonKey(name: "small_url")
   final String? smallUrl;
   @override
+  @JsonKey(name: "super_url")
   final String? superUrl;
   @override
+  @JsonKey(name: "thumb_url")
   final String? thumbUrl;
   @override
+  @JsonKey(name: "tiny_url")
   final String? tinyUrl;
   @override
+  @JsonKey(name: "original_url")
   final String? originalUrl;
   @override
+  @JsonKey(name: "image_tags")
   final String? imageTags;
 
   @override
@@ -1577,38 +1732,48 @@ class _$ImageImpl implements _Image {
 
 abstract class _Image implements Image {
   const factory _Image(
-      {final String? iconUrl,
-      final String? mediumUrl,
-      final String? screenUrl,
-      final String? screenLargeUrl,
-      final String? smallUrl,
-      final String? superUrl,
-      final String? thumbUrl,
-      final String? tinyUrl,
-      final String? originalUrl,
-      final String? imageTags}) = _$ImageImpl;
+      {@JsonKey(name: "icon_url") final String? iconUrl,
+      @JsonKey(name: "medium_url") final String? mediumUrl,
+      @JsonKey(name: "screen_url") final String? screenUrl,
+      @JsonKey(name: "screen_large_url") final String? screenLargeUrl,
+      @JsonKey(name: "small_url") final String? smallUrl,
+      @JsonKey(name: "super_url") final String? superUrl,
+      @JsonKey(name: "thumb_url") final String? thumbUrl,
+      @JsonKey(name: "tiny_url") final String? tinyUrl,
+      @JsonKey(name: "original_url") final String? originalUrl,
+      @JsonKey(name: "image_tags") final String? imageTags}) = _$ImageImpl;
 
   factory _Image.fromJson(Map<String, dynamic> json) = _$ImageImpl.fromJson;
 
   @override
+  @JsonKey(name: "icon_url")
   String? get iconUrl;
   @override
+  @JsonKey(name: "medium_url")
   String? get mediumUrl;
   @override
+  @JsonKey(name: "screen_url")
   String? get screenUrl;
   @override
+  @JsonKey(name: "screen_large_url")
   String? get screenLargeUrl;
   @override
+  @JsonKey(name: "small_url")
   String? get smallUrl;
   @override
+  @JsonKey(name: "super_url")
   String? get superUrl;
   @override
+  @JsonKey(name: "thumb_url")
   String? get thumbUrl;
   @override
+  @JsonKey(name: "tiny_url")
   String? get tinyUrl;
   @override
+  @JsonKey(name: "original_url")
   String? get originalUrl;
   @override
+  @JsonKey(name: "image_tags")
   String? get imageTags;
 
   /// Create a copy of Image
@@ -1625,10 +1790,16 @@ Volume _$VolumeFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Volume {
+  @JsonKey(name: "api_detail_url")
   String? get apiDetailUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "id")
   int? get id => throw _privateConstructorUsedError;
+  @JsonKey(name: "name")
   String? get name => throw _privateConstructorUsedError;
+  @JsonKey(name: "site_detail_url")
   String? get siteDetailUrl => throw _privateConstructorUsedError;
+  @JsonKey(name: "role")
+  String? get role => throw _privateConstructorUsedError;
 
   /// Serializes this Volume to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1645,7 +1816,11 @@ abstract class $VolumeCopyWith<$Res> {
       _$VolumeCopyWithImpl<$Res, Volume>;
   @useResult
   $Res call(
-      {String? apiDetailUrl, int? id, String? name, String? siteDetailUrl});
+      {@JsonKey(name: "api_detail_url") String? apiDetailUrl,
+      @JsonKey(name: "id") int? id,
+      @JsonKey(name: "name") String? name,
+      @JsonKey(name: "site_detail_url") String? siteDetailUrl,
+      @JsonKey(name: "role") String? role});
 }
 
 /// @nodoc
@@ -1667,6 +1842,7 @@ class _$VolumeCopyWithImpl<$Res, $Val extends Volume>
     Object? id = freezed,
     Object? name = freezed,
     Object? siteDetailUrl = freezed,
+    Object? role = freezed,
   }) {
     return _then(_value.copyWith(
       apiDetailUrl: freezed == apiDetailUrl
@@ -1685,6 +1861,10 @@ class _$VolumeCopyWithImpl<$Res, $Val extends Volume>
           ? _value.siteDetailUrl
           : siteDetailUrl // ignore: cast_nullable_to_non_nullable
               as String?,
+      role: freezed == role
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String?,
     ) as $Val);
   }
 }
@@ -1697,7 +1877,11 @@ abstract class _$$VolumeImplCopyWith<$Res> implements $VolumeCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String? apiDetailUrl, int? id, String? name, String? siteDetailUrl});
+      {@JsonKey(name: "api_detail_url") String? apiDetailUrl,
+      @JsonKey(name: "id") int? id,
+      @JsonKey(name: "name") String? name,
+      @JsonKey(name: "site_detail_url") String? siteDetailUrl,
+      @JsonKey(name: "role") String? role});
 }
 
 /// @nodoc
@@ -1717,6 +1901,7 @@ class __$$VolumeImplCopyWithImpl<$Res>
     Object? id = freezed,
     Object? name = freezed,
     Object? siteDetailUrl = freezed,
+    Object? role = freezed,
   }) {
     return _then(_$VolumeImpl(
       apiDetailUrl: freezed == apiDetailUrl
@@ -1735,6 +1920,10 @@ class __$$VolumeImplCopyWithImpl<$Res>
           ? _value.siteDetailUrl
           : siteDetailUrl // ignore: cast_nullable_to_non_nullable
               as String?,
+      role: freezed == role
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String?,
     ));
   }
 }
@@ -1743,23 +1932,34 @@ class __$$VolumeImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$VolumeImpl implements _Volume {
   const _$VolumeImpl(
-      {this.apiDetailUrl, this.id, this.name, this.siteDetailUrl});
+      {@JsonKey(name: "api_detail_url") this.apiDetailUrl,
+      @JsonKey(name: "id") this.id,
+      @JsonKey(name: "name") this.name,
+      @JsonKey(name: "site_detail_url") this.siteDetailUrl,
+      @JsonKey(name: "role") this.role});
 
   factory _$VolumeImpl.fromJson(Map<String, dynamic> json) =>
       _$$VolumeImplFromJson(json);
 
   @override
+  @JsonKey(name: "api_detail_url")
   final String? apiDetailUrl;
   @override
+  @JsonKey(name: "id")
   final int? id;
   @override
+  @JsonKey(name: "name")
   final String? name;
   @override
+  @JsonKey(name: "site_detail_url")
   final String? siteDetailUrl;
+  @override
+  @JsonKey(name: "role")
+  final String? role;
 
   @override
   String toString() {
-    return 'Volume(apiDetailUrl: $apiDetailUrl, id: $id, name: $name, siteDetailUrl: $siteDetailUrl)';
+    return 'Volume(apiDetailUrl: $apiDetailUrl, id: $id, name: $name, siteDetailUrl: $siteDetailUrl, role: $role)';
   }
 
   @override
@@ -1772,13 +1972,14 @@ class _$VolumeImpl implements _Volume {
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.siteDetailUrl, siteDetailUrl) ||
-                other.siteDetailUrl == siteDetailUrl));
+                other.siteDetailUrl == siteDetailUrl) &&
+            (identical(other.role, role) || other.role == role));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
-      Object.hash(runtimeType, apiDetailUrl, id, name, siteDetailUrl);
+      Object.hash(runtimeType, apiDetailUrl, id, name, siteDetailUrl, role);
 
   /// Create a copy of Volume
   /// with the given fields replaced by the non-null parameter values.
@@ -1798,21 +1999,29 @@ class _$VolumeImpl implements _Volume {
 
 abstract class _Volume implements Volume {
   const factory _Volume(
-      {final String? apiDetailUrl,
-      final int? id,
-      final String? name,
-      final String? siteDetailUrl}) = _$VolumeImpl;
+      {@JsonKey(name: "api_detail_url") final String? apiDetailUrl,
+      @JsonKey(name: "id") final int? id,
+      @JsonKey(name: "name") final String? name,
+      @JsonKey(name: "site_detail_url") final String? siteDetailUrl,
+      @JsonKey(name: "role") final String? role}) = _$VolumeImpl;
 
   factory _Volume.fromJson(Map<String, dynamic> json) = _$VolumeImpl.fromJson;
 
   @override
+  @JsonKey(name: "api_detail_url")
   String? get apiDetailUrl;
   @override
+  @JsonKey(name: "id")
   int? get id;
   @override
+  @JsonKey(name: "name")
   String? get name;
   @override
+  @JsonKey(name: "site_detail_url")
   String? get siteDetailUrl;
+  @override
+  @JsonKey(name: "role")
+  String? get role;
 
   /// Create a copy of Volume
   /// with the given fields replaced by the non-null parameter values.

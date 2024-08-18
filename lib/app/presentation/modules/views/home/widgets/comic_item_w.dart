@@ -25,7 +25,9 @@ class ComicItemW extends StatelessWidget {
     final ComicItemCubit comicItemCubit = context.read<ComicItemCubit>();
     return GestureDetector(
       onTap: () {
-        comicItemCubit.setUrlParh(comic.apiDetailUrl!.extractedPart);
+        comicItemCubit.getComicDetail(
+          urlPath: comic.apiDetailUrl!.extractedPart,
+        );
         routerCubit.goComic();
       },
       child: ClipRect(

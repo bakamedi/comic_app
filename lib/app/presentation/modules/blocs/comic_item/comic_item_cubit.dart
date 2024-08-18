@@ -2,6 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../domain/failures/failure.dart';
 import '../../../../domain/repositories/comic_repository.dart';
+import '../../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 import '../../../global/widgets/states_w/states_type_gw.dart';
 import 'comic_item_state.dart';
 
@@ -14,34 +15,33 @@ class ComicItemCubit extends Cubit<ComicItemState> {
         super(const ComicItemState(
           stateType: StateType.loading,
           failure: Failure.unknown(),
-        )) {
-    getComicDetail();
-  }
+        ));
 
   StateType get stateType => state.stateType;
+  IssueDetailDataResponse? get issueDetailDataResponse =>
+      state.issueDetailDataResponse;
 
-  void getComicDetail() async {
+  void getComicDetail({required String urlPath}) async {
     final result = await _comicRepository.getComicsDetail(
-      urlPath: state.urlPath,
+      urlPath: urlPath,
     );
     result.when(
-      left: (failure) {},
-      right: (data) {
+      left: (failure) {
         emit(
-          ComicItemState(
-            stateType: StateType.success,
+          const ComicItemState(
+            stateType: StateType.error,
+            issueDetailDataResponse: null,
           ),
         );
       },
-    );
-  }
-
-  void setUrlParh(String urlPath) {
-    emit(
-      ComicItemState(
-        stateType: stateType,
-        urlPath: urlPath,
-      ),
+      right: (data) {
+        emit(
+          ComicItemState(
+            stateType: StateType.loading,
+            issueDetailDataResponse: data,
+          ),
+        );
+      },
     );
   }
 }

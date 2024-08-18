@@ -4,52 +4,51 @@ import '../../extensions/widgets_ext.dart';
 
 import 'error_gw.dart';
 import 'internet_gw.dart';
-import 'shimmer_gw.dart';
 import 'states_type_gw.dart';
 import 'timeout_gw.dart';
 
 class StateBodyGW extends StatelessWidget {
   final StateType state;
+  final bool isSliver;
   final void Function()? onPressedRetry;
   final Widget child;
+  final Widget loadingWidget;
 
   const StateBodyGW({
     super.key,
     this.state = StateType.loading,
     required this.child,
     this.onPressedRetry,
+    this.isSliver = false,
+    required this.loadingWidget,
   });
 
   @override
   Widget build(BuildContext context) {
+    return _buildStateWidget();
+  }
+
+  Widget _buildStateWidget() {
+    Widget stateWidget;
+
     switch (state) {
       case StateType.internet:
-        return _buildInternetState();
+        stateWidget = InternetGW(onPressed: onPressedRetry);
+        break;
       case StateType.timeout:
-        return _buildTimeoutState();
+        stateWidget = TimeoutGW(onPressed: onPressedRetry);
+        break;
       case StateType.error:
-        return _buildErrorState();
+        stateWidget = ErrorGW(onPressed: onPressedRetry);
+        break;
       case StateType.loading:
-        return _buildLoadingState();
+        stateWidget = loadingWidget;
+        break;
       case StateType.success:
       default:
         return child;
     }
-  }
 
-  Widget _buildInternetState() {
-    return InternetGW(onPressed: onPressedRetry).sliverBox;
-  }
-
-  Widget _buildTimeoutState() {
-    return TimeoutGW(onPressed: onPressedRetry).sliverBox;
-  }
-
-  Widget _buildErrorState() {
-    return ErrorGW(onPressed: () {}).sliverBox;
-  }
-
-  Widget _buildLoadingState() {
-    return const CardShimmer().sliverBox;
+    return isSliver ? stateWidget.sliverBox : stateWidget;
   }
 }

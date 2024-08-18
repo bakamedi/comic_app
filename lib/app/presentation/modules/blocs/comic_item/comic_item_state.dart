@@ -7,16 +7,14 @@ import '../../../global/widgets/states_w/states_type_gw.dart';
 class ComicItemState extends Equatable {
   final StateType stateType;
   final Failure? failure;
-  final String urlPath;
   final IssueDetailDataResponse? issueDetailDataResponse;
 
   const ComicItemState({
     this.failure,
     required this.stateType,
-    this.urlPath = '',
     this.issueDetailDataResponse,
   });
 
   @override
-  List<Object?> get props => [failure, stateType, urlPath];
+  List<Object?> get props => [failure, stateType, issueDetailDataResponse];
 }
