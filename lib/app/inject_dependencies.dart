@@ -30,7 +30,9 @@ void _injectCubits() {
     ),
   );
   _getIt.registerSingleton(
-    ComicItemCubit(),
+    ComicItemCubit(
+      comicRepository: _getIt<ComicRepository>(),
+    ),
   );
 }
 

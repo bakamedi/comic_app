@@ -27,7 +27,7 @@ class HomeView extends StatelessWidget {
         builder: (context, homeState) {
           return CustomScrollView(
             slivers: [
-              const SeparatorGw().sliverBox,
+              const SeparatorGW().sliverBox,
               Text(
                 'Lastest Issues',
                 style: TextStyle(
@@ -39,7 +39,7 @@ class HomeView extends StatelessWidget {
                       vertical: adaptativeScreen.bhp(1),
                     ),
                   ),
-              const SeparatorGw().sliverBox,
+              const SeparatorGW().sliverBox,
               ComicsW(
                 adaptativeScreen: adaptativeScreen,
                 homeCubit: homeCubit,

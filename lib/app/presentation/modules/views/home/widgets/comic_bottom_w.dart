@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
-import '../../../../../domain/responses/issues_data_response.dart';
+import '../../../../../domain/responses/comic_data/issues_data_response.dart';
 import '../../../../global/extensions/datetime_ext.dart';
 import '../../../../global/extensions/widgets_ext.dart';
 import '../../../../global/theme/theme_app_data.dart';
@@ -43,7 +43,7 @@ class ComicBottomW extends StatelessWidget {
             ),
           ),
           adaptativeScreen.bhp(1).h,
-          const SeparatorGw()
+          const SeparatorGW()
         ],
       ).padding(
         EdgeInsets.symmetric(

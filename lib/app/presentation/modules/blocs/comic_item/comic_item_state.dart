@@ -1,20 +1,22 @@
 import 'package:equatable/equatable.dart';
 
 import '../../../../domain/failures/failure.dart';
-import '../../../../domain/responses/issues_data_response.dart';
+import '../../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 import '../../../global/widgets/states_w/states_type_gw.dart';
 
 class ComicItemState extends Equatable {
   final StateType stateType;
   final Failure? failure;
-  final Comic? comicItem;
+  final String urlPath;
+  final IssueDetailDataResponse? issueDetailDataResponse;
 
   const ComicItemState({
     this.failure,
     required this.stateType,
-    this.comicItem,
+    this.urlPath = '',
+    this.issueDetailDataResponse,
   });
 
   @override
-  List<Object?> get props => [failure, stateType, comicItem];
+  List<Object?> get props => [failure, stateType, urlPath];
 }

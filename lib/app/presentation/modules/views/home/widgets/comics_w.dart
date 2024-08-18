@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
-import '../../../../../domain/responses/issues_data_response.dart';
+import '../../../../../domain/responses/comic_data/issues_data_response.dart';
 import '../../../../global/widgets/states_w/state_body_gw.dart';
 import '../../../../global/extensions/widgets_ext.dart';
 import '../../../blocs/home_bloc/home_cubit.dart';

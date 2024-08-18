@@ -24,6 +24,6 @@ class RouterCubit extends Cubit<GoRouter> {
   }
 
   void goComic() {
-    state.go(ComicItemRouter.path);
+    state.pushNamed(ComicItemRouter.path);
   }
 }

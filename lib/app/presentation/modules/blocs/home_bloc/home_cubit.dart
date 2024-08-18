@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../domain/failures/failure.dart';
 import '../../../../domain/repositories/comic_repository.dart';
-import '../../../../domain/responses/issues_data_response.dart';
+import '../../../../domain/responses/comic_data/issues_data_response.dart';
 import '../../../global/widgets/states_w/states_type_gw.dart';
 import 'home_state.dart';
 

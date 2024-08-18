@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
 import '../../../../domain/failures/failure.dart';
-import '../../../../domain/responses/issues_data_response.dart';
+import '../../../../domain/responses/comic_data/issues_data_response.dart';
 import '../../../global/widgets/states_w/states_type_gw.dart';
 
 class HomeState extends Equatable {

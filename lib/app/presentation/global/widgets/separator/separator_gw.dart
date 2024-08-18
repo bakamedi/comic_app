@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import '../../../../core/adaptative_screen/adaptative_screen.dart';
 import '../../theme/theme_app_data.dart';
 
-class SeparatorGw extends StatelessWidget {
+class SeparatorGW extends StatelessWidget {
   final EdgeInsetsGeometry? margin;
   final EdgeInsetsGeometry? padding;
   final Color? color;
-  const SeparatorGw({
+  const SeparatorGW({
     super.key,
     this.margin,
     this.padding,
