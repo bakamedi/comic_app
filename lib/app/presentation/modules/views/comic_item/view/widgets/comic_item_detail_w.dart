@@ -1,3 +1,4 @@
+import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/adaptative_screen/adaptative_screen.dart';
@@ -46,6 +47,15 @@ class ComicItemDetailW extends StatelessWidget {
               ),
             ),
             _title('Creators'),
+            _body(comicDetail.personCredits),
+            _title('Characters'),
+            _body(comicDetail.characterCredits),
+            _title('Teams'),
+            _body(comicDetail.teamCredits),
+            _title('Locations'),
+            _body(comicDetail.locationCredits),
+            _title('Concepts'),
+            _body(comicDetail.conceptCredits),
           ],
         ),
       ),
@@ -65,6 +75,63 @@ class ComicItemDetailW extends StatelessWidget {
         ),
         const SeparatorGW(),
       ],
+    );
+  }
+
+  Widget _body(List<dynamic>? list) {
+    if (list == null || list.isEmpty) {
+      return adaptativeScreen.bhp(2).h;
+    }
+    return Container(
+      margin: EdgeInsets.only(
+        top: adaptativeScreen.bhp(2),
+      ),
+      height: adaptativeScreen.hp(3) * list.length,
+      child: GridView.builder(
+        physics: const NeverScrollableScrollPhysics(),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          mainAxisSpacing: 3,
+          mainAxisExtent: adaptativeScreen.bhp(5),
+          crossAxisCount: 2, // number of items in each row
+        ),
+        itemCount: list.length,
+        itemBuilder: (context, index) {
+          final item = list[index];
+          return Row(
+            children: [
+              // ExtendedImage.network(
+              //   item.imageUrl ??
+              //       'https://stock.adobe.com/search/images?k=default+image', // La URL de la imagen
+              //   width: adaptativeScreen
+              //       .dp(5), // Ajusta el tamaño según sea necesario
+              //   height: adaptativeScreen.dp(5),
+              //   fit: BoxFit.cover,
+              // ),
+              SizedBox(width: adaptativeScreen.bwh(2)),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.name ?? '',
+                    style: TextStyle(
+                      color: ThemeAppColors.green,
+                      fontSize: adaptativeScreen.dp(1.5),
+                    ),
+                  ),
+                  if (item.role != null)
+                    Text(
+                      item.role!,
+                      style: TextStyle(
+                        color: ThemeAppColors.greySecondBackground,
+                        fontSize: adaptativeScreen.dp(1.5),
+                      ),
+                    ),
+                ],
+              ),
+            ],
+          );
+        },
+      ),
     );
   }
 }
