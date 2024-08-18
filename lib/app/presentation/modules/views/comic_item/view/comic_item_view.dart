@@ -9,6 +9,7 @@ import '../../../../global/widgets/states_w/state_body_gw.dart';
 import '../../../../global/widgets/states_w/states_type_gw.dart';
 import '../../../blocs/comic_item/comic_item_cubit.dart';
 import '../../../blocs/comic_item/comic_item_state.dart';
+import 'widgets/comic_item_detail_w.dart';
 import 'widgets/comic_item_image_w.dart';
 
 class ComicItemView extends StatelessWidget {
@@ -34,16 +35,17 @@ class ComicItemView extends StatelessWidget {
                   title: RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                      text: 'comicDetail.volume!.name',
+                      text: homeState
+                          .issueDetailDataResponse!.results!.volume!.name,
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: adaptativeScreen.dp(2.5),
+                        fontSize: adaptativeScreen.dp(2.2),
                         fontWeight: FontWeight.w500,
                       ),
                       children: <TextSpan>[
                         TextSpan(
-                          //text: ' #${comicDetail.issueNumber}',
-                          text: 'ds',
+                          text:
+                              ' #${homeState.issueDetailDataResponse!.results!.issueNumber}',
                           style: TextStyle(
                             color: Colors.grey,
                             fontSize: adaptativeScreen.dp(1.8),
@@ -58,19 +60,22 @@ class ComicItemView extends StatelessWidget {
           body: StateBodyGW(
             state: comicItemCubit.stateType,
             loadingWidget: const ComicItemLoadingGW(),
-            child: comicItemCubit.issueDetailDataResponse == null
+            child: homeState.issueDetailDataResponse == null
                 ? adaptativeScreen.hp(1).h
                 : Stack(
                     children: [
                       ComicItemImageW(
                         adaptativeScreen: adaptativeScreen,
-                        originalUrl: ' comicDetail.image!.smallUrl!',
-                        issueNumber: 'comicDetail.issueNumber!',
+                        originalUrl: homeState
+                            .issueDetailDataResponse!.results!.image!.smallUrl!,
+                        issueNumber: homeState
+                            .issueDetailDataResponse!.results!.issueNumber!,
                       ),
-                      // ComicItemDetailW(
-                      //   adaptativeScreen: adaptativeScreen,
-                      //   comicDetail: comicDetail,
-                      // ),
+                      ComicItemDetailW(
+                        adaptativeScreen: adaptativeScreen,
+                        comicDetail:
+                            homeState.issueDetailDataResponse!.results!,
+                      ),
                     ],
                   ),
           ),

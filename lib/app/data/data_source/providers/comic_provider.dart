@@ -66,9 +66,7 @@ class ComicProvider {
       );
       return result.when(
         success: (status, data) {
-          print(data);
           final issuesDetailData = issueDetailDataResponseFromJson(data);
-          print(issuesDetailData);
           return Either.right(
             issuesDetailData,
           );

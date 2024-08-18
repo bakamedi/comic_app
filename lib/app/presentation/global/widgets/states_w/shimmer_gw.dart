@@ -21,7 +21,7 @@ class CardShimmer extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
         ),
         margin: EdgeInsets.only(
-          top: adaptativeScreen.bhp(10),
+          top: adaptativeScreen.bhp(2),
           left: adaptativeScreen.bwh(5),
           right: adaptativeScreen.bwh(5),
         ),

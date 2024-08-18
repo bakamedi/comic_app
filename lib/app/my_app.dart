@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'presentation/global/theme/theme_app_data.dart';
 import 'presentation/router/app_routers_config.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: appRouters,
+      theme: ThemeAppData.lightTheme,
       title: 'Comic App',
       themeMode: ThemeMode.light,
     );

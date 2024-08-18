@@ -31,7 +31,7 @@ class ImageCardShimmer extends StatelessWidget {
             alignment: AlignmentDirectional.center,
             children: [
               FadeShimmer(
-                height: adaptativeScreen.hp(3.5) * heightFactor,
+                height: adaptativeScreen.hp(3.2) * heightFactor,
                 width: adaptativeScreen.width,
                 fadeTheme: FadeTheme.light,
                 baseColor: Colors.grey.shade300,

@@ -28,7 +28,6 @@ class HomeCubit extends Cubit<HomeState> {
     result.when(
       left: (failure) {},
       right: (data) {
-        print(data);
         emit(
           HomeState(
             stateType: StateType.success,

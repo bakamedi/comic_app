@@ -35,9 +35,10 @@ class ComicItemCubit extends Cubit<ComicItemState> {
         );
       },
       right: (data) {
+        print(data.results);
         emit(
           ComicItemState(
-            stateType: StateType.loading,
+            stateType: StateType.success,
             issueDetailDataResponse: data,
           ),
         );

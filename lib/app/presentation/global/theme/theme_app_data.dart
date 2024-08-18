@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
 
+abstract class ThemeAppData {
+  ThemeAppData._();
+  static ThemeData lightTheme = ThemeData(
+    appBarTheme: const AppBarTheme(
+      actionsIconTheme: IconThemeData(
+        color: Colors.white,
+      ),
+      iconTheme: IconThemeData(
+        color: Colors.white,
+      ),
+    ),
+  );
+}
+
 abstract class ThemeAppColors {
   ThemeAppColors._();
   static Color get appBar => _appBar;
