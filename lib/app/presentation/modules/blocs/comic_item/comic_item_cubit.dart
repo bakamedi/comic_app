@@ -41,7 +41,6 @@ class ComicItemCubit extends Cubit<ComicItemState> {
         );
       },
       right: (data) {
-        print(data.results);
         emit(
           ComicItemState(
             stateType: StateType.success,

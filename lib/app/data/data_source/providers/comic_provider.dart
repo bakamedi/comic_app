@@ -5,14 +5,16 @@ import '../../../domain/failures/failure.dart';
 import '../../../domain/responses/comic_data/issues_data_response.dart';
 import '../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 import '../../helpers/http/http_helper.dart';
+import 'comic_provider_repository.dart';
 
-class ComicProvider {
+class ComicProvider extends ComicProviderRepository {
   final HttpHelper _httpHelper;
 
   ComicProvider({
     required HttpHelper httpHelper,
   }) : _httpHelper = httpHelper;
 
+  @override
   Future<Either<Failure, IssuesDataResponse>> getComics({
     int limit = 30,
   }) async {
@@ -57,6 +59,7 @@ class ComicProvider {
     );
   }
 
+  @override
   Future<Either<Failure, IssueDetailDataResponse>> getComicDetail({
     required String detailUrlPath,
   }) async {

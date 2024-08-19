@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 import 'data/data_source/providers/comic_provider.dart';
 import 'data/helpers/http/http_helper.dart';
@@ -48,6 +49,19 @@ void _injectProviders() {
         'api_key': dotenv.get('API_KEY'),
         'format': 'json',
       },
+    ),
+  );
+
+  dio.interceptors.add(
+    PrettyDioLogger(
+      requestHeader: true,
+      requestBody: true,
+      responseBody: true,
+      responseHeader: false,
+      error: true,
+      compact: true,
+      maxWidth: 90,
+      enabled: true,
     ),
   );
 
