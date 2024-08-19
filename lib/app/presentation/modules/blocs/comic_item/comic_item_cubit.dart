@@ -33,9 +33,10 @@ class ComicItemCubit extends Cubit<ComicItemState> {
     );
     result.when(
       left: (failure) {
+        final stateType = _mapFailureToStateType(failure);
         emit(
-          const ComicItemState(
-            stateType: StateType.error,
+          ComicItemState(
+            stateType: stateType,
             issueDetailDataResponse: null,
           ),
         );
@@ -49,5 +50,16 @@ class ComicItemCubit extends Cubit<ComicItemState> {
         );
       },
     );
+  }
+
+  StateType _mapFailureToStateType(Failure failure) {
+    if (failure == const Failure.network() ||
+        failure == const Failure.unknown()) {
+      return StateType.error;
+    } else if (failure == const Failure.timeout()) {
+      return StateType.timeout;
+    } else {
+      return StateType.error;
+    }
   }
 }

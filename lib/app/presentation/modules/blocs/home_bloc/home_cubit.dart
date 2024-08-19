@@ -30,12 +30,15 @@ class HomeCubit extends Cubit<HomeState> {
         issuesDataResponse: null,
       ),
     );
+
     final result = await _comicRepository.getAllComics();
+
     result.when(
       left: (failure) {
+        final stateType = _mapFailureToStateType(failure);
         emit(
-          const HomeState(
-            stateType: StateType.error,
+          HomeState(
+            stateType: stateType,
             issuesDataResponse: null,
           ),
         );
@@ -49,5 +52,16 @@ class HomeCubit extends Cubit<HomeState> {
         );
       },
     );
+  }
+
+  StateType _mapFailureToStateType(Failure failure) {
+    if (failure == const Failure.network() ||
+        failure == const Failure.unknown()) {
+      return StateType.error;
+    } else if (failure == const Failure.timeout()) {
+      return StateType.timeout;
+    } else {
+      return StateType.error;
+    }
   }
 }
