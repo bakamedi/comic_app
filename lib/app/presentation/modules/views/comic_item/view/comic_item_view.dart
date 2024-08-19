@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 import '../../../../global/extensions/widgets_ext.dart';
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
 import '../../../../global/theme/theme_app_data.dart';
@@ -9,6 +10,7 @@ import '../../../../global/widgets/states_w/state_body_gw.dart';
 import '../../../../global/widgets/states_w/states_type_gw.dart';
 import '../../../blocs/comic_item/comic_item_cubit.dart';
 import '../../../blocs/comic_item/comic_item_state.dart';
+import 'widgets/comic_item_app_bar_w.dart';
 import 'widgets/comic_item_detail_w.dart';
 import 'widgets/comic_item_image_w.dart';
 
@@ -29,34 +31,12 @@ class ComicItemView extends StatelessWidget {
           backgroundColor: homeState.stateType == StateType.loading
               ? Colors.white
               : ThemeAppColors.greySecondBackground,
-          appBar: homeState.stateType == StateType.loading
-              ? null
-              : AppBar(
-                  title: RichText(
-                    textAlign: TextAlign.center,
-                    text: TextSpan(
-                      text: homeState
-                          .issueDetailDataResponse!.results!.volume!.name,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: adaptativeScreen.dp(2.2),
-                        fontWeight: FontWeight.w500,
-                      ),
-                      children: <TextSpan>[
-                        TextSpan(
-                          text:
-                              ' #${homeState.issueDetailDataResponse!.results!.issueNumber}',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: adaptativeScreen.dp(1.8),
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  backgroundColor: ThemeAppColors.appBar,
-                ),
+          appBar: ComicItemAppBarW(
+            adaptativeScreen: adaptativeScreen,
+            stateType: homeState.stateType,
+            title: _title(homeState.issueDetailDataResponse),
+            issueNumber: _issueNumber(homeState.issueDetailDataResponse),
+          ),
           body: StateBodyGW(
             state: comicItemCubit.stateType,
             loadingWidget: const ComicItemLoadingGW(),
@@ -82,5 +62,19 @@ class ComicItemView extends StatelessWidget {
         );
       },
     );
+  }
+
+  String _title(IssueDetailDataResponse? issueDetailDataResponse) {
+    if (issueDetailDataResponse == null) {
+      return '';
+    }
+    return issueDetailDataResponse.results!.volume!.name ?? '';
+  }
+
+  String _issueNumber(IssueDetailDataResponse? issueDetailDataResponse) {
+    if (issueDetailDataResponse == null) {
+      return '';
+    }
+    return ' #${issueDetailDataResponse.results!.issueNumber}';
   }
 }

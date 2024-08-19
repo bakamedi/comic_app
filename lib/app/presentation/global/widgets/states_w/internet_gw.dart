@@ -15,10 +15,11 @@ class InternetGW extends StatelessWidget {
     final adaptativeScreen = AdaptativeScreen(
       context,
     );
-    return Padding(
+    return Container(
       padding: EdgeInsets.only(
         top: adaptativeScreen.bhp(4),
       ),
+      color: Colors.white,
       child: Column(
         children: [
           Icon(
@@ -39,6 +40,9 @@ class InternetGW extends StatelessWidget {
             ),
           ),
           PrimaryBtnGW(
+            margin: EdgeInsets.symmetric(
+              horizontal: adaptativeScreen.bwh(5),
+            ),
             label: 'Intentar nuevamente',
             onPressed: onPressed,
           ),
