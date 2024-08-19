@@ -22,6 +22,12 @@ class ComicItemCubit extends Cubit<ComicItemState> {
       state.issueDetailDataResponse;
 
   void getComicDetail({required String urlPath}) async {
+    emit(
+      const ComicItemState(
+        stateType: StateType.loading,
+        issueDetailDataResponse: null,
+      ),
+    );
     final result = await _comicRepository.getComicsDetail(
       urlPath: urlPath,
     );

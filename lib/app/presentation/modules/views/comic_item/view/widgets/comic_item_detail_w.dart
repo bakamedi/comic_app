@@ -1,4 +1,3 @@
-import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/adaptative_screen/adaptative_screen.dart';
@@ -154,14 +153,10 @@ class ComicItemDetailW extends StatelessWidget {
           final item = list[index];
           return Row(
             children: [
-              // ExtendedImage.network(
-              //   item.imageUrl ??
-              //       'https://stock.adobe.com/search/images?k=default+image', // La URL de la imagen
-              //   width: adaptativeScreen
-              //       .dp(5), // Ajusta el tamaño según sea necesario
-              //   height: adaptativeScreen.dp(5),
-              //   fit: BoxFit.cover,
-              // ),
+              Icon(
+                Icons.image_outlined,
+                size: adaptativeScreen.dp(2.2),
+              ),
               SizedBox(width: adaptativeScreen.bwh(2)),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
