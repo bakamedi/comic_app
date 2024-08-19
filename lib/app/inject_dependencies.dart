@@ -17,8 +17,12 @@ const _httpTimeout = Duration(
 
 GetIt _getIt = GetIt.instance;
 
-void injectDependencies() {
-  _injectProviders();
+void injectDependencies({
+  required String localComicData,
+}) {
+  _injectProviders(
+    mockData: localComicData,
+  );
   _injectRepositories();
   _injectCubits();
 }
@@ -37,7 +41,7 @@ void _injectCubits() {
   );
 }
 
-void _injectProviders() {
+void _injectProviders({required String mockData}) {
 // Crea la instancia de Dio
   final dio = Dio(
     BaseOptions(
@@ -72,7 +76,10 @@ void _injectProviders() {
 
   // Registra el ComicProvider
   _getIt.registerSingleton<ComicProvider>(
-    ComicProvider(httpHelper: httpHelper),
+    ComicProvider(
+      httpHelper: httpHelper,
+      mockData: mockData,
+    ),
   );
 }
 

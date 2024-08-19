@@ -24,9 +24,22 @@ class HomeCubit extends Cubit<HomeState> {
   IssuesDataResponse? get issuesDataResponse => state.issuesDataResponse;
 
   void getAll() async {
+    emit(
+      const HomeState(
+        stateType: StateType.loading,
+        issuesDataResponse: null,
+      ),
+    );
     final result = await _comicRepository.getAllComics();
     result.when(
-      left: (failure) {},
+      left: (failure) {
+        emit(
+          const HomeState(
+            stateType: StateType.error,
+            issuesDataResponse: null,
+          ),
+        );
+      },
       right: (data) {
         emit(
           HomeState(

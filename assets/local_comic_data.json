@@ -1,0 +1,611 @@
+{
+    "error": "OK",
+    "limit": 30,
+    "offset": 0,
+    "number_of_page_results": 30,
+    "number_of_total_results": 28236,
+    "status_code": 1,
+    "results": [
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067081/",
+            "date_added": "2024-08-18 04:16:00",
+            "id": 1067081,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447482-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447482-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447482-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447482-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447482-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447482-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447482-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447482-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447482-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "12",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067080/",
+            "date_added": "2024-08-18 04:15:07",
+            "id": 1067080,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447481-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447481-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447481-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447481-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447481-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447481-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447481-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447481-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447481-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "14",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067079/",
+            "date_added": "2024-08-18 04:14:11",
+            "id": 1067079,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447480-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447480-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447480-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447480-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447480-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447480-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447480-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447480-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447480-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "17",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067078/",
+            "date_added": "2024-08-18 04:12:46",
+            "id": 1067078,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447479-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447479-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447479-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447479-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447479-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447479-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447479-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447479-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447479-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "117",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067077/",
+            "date_added": "2024-08-18 04:11:12",
+            "id": 1067077,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447478-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447478-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447478-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447478-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447478-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447478-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447478-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447478-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447478-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067076/",
+            "date_added": "2024-08-18 04:09:46",
+            "id": 1067076,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447476-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447476-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447476-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447476-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447476-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447476-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447476-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447476-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447476-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "12",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067075/",
+            "date_added": "2024-08-18 04:08:52",
+            "id": 1067075,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447475-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447475-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447475-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447475-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447475-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447475-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447475-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447475-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447475-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "3",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067074/",
+            "date_added": "2024-08-18 04:07:55",
+            "id": 1067074,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447474-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447474-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447474-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447474-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447474-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447474-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447474-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447474-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447474-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "2",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067073/",
+            "date_added": "2024-08-18 04:06:40",
+            "id": 1067073,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9447473-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9447473-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9447473-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9447473-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9447473-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9447473-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9447473-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9447473-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9447473-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "30",
+            "name": null,
+            "store_date": "2024-08-21"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067059/",
+            "date_added": "2024-08-17 11:20:41",
+            "id": 1067059,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11156/111569227/9446822-141%282024-10%29.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11156/111569227/9446822-141%282024-10%29.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11156/111569227/9446822-141%282024-10%29.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11156/111569227/9446822-141%282024-10%29.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11156/111569227/9446822-141%282024-10%29.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111569227/9446822-141%282024-10%29.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11156/111569227/9446822-141%282024-10%29.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11156/111569227/9446822-141%282024-10%29.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11156/111569227/9446822-141%282024-10%29.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "141",
+            "name": "No. 10, 2024",
+            "store_date": "2024-08-17"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1067008/",
+            "date_added": "2024-08-16 13:15:22",
+            "id": 1067008,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11156/111569227/9445695-215%282024-10%29.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11156/111569227/9445695-215%282024-10%29.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11156/111569227/9445695-215%282024-10%29.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11156/111569227/9445695-215%282024-10%29.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11156/111569227/9445695-215%282024-10%29.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111569227/9445695-215%282024-10%29.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11156/111569227/9445695-215%282024-10%29.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11156/111569227/9445695-215%282024-10%29.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11156/111569227/9445695-215%282024-10%29.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "215",
+            "name": "No. 10, 2024",
+            "store_date": "2024-08-16"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066800/",
+            "date_added": "2024-08-14 00:55:47",
+            "id": 1066800,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9443279-cover.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9443279-cover.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9443279-cover.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9443279-cover.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9443279-cover.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9443279-cover.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9443279-cover.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9443279-cover.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9443279-cover.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": null,
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066787/",
+            "date_added": "2024-08-14 00:33:06",
+            "id": 1066787,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9443262-cover.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9443262-cover.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9443262-cover.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9443262-cover.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9443262-cover.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9443262-cover.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9443262-cover.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9443262-cover.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9443262-cover.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "8",
+            "name": null,
+            "store_date": null
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066784/",
+            "date_added": "2024-08-14 00:28:33",
+            "id": 1066784,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11161/111615891/9443256-cover.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11161/111615891/9443256-cover.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11161/111615891/9443256-cover.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11161/111615891/9443256-cover.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11161/111615891/9443256-cover.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9443256-cover.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11161/111615891/9443256-cover.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11161/111615891/9443256-cover.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11161/111615891/9443256-cover.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": null,
+            "store_date": null
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066737/",
+            "date_added": "2024-08-13 12:14:33",
+            "id": 1066737,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442875-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442875-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442875-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442875-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442875-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442875-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442875-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442875-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442875-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": "Training Day; Iron Fisticuffs; Emergency Call; Heroes for Hire, We'll Bust Your Ass; Happy Birthday, Danny",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066723/",
+            "date_added": "2024-08-13 04:47:32",
+            "id": 1066723,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442684-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442684-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442684-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442684-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442684-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442684-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442684-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442684-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442684-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "2",
+            "name": null,
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066722/",
+            "date_added": "2024-08-13 04:46:45",
+            "id": 1066722,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442683-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442683-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442683-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442683-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442683-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442683-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442683-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442683-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442683-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "10",
+            "name": "Execution or Nice Universe, Sure Would Be A shame If Something Happened To It",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066721/",
+            "date_added": "2024-08-13 04:45:54",
+            "id": 1066721,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442682-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442682-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442682-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442682-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442682-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442682-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442682-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442682-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442682-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "14",
+            "name": "Escape from Gamorra Island; The Shadow Lanterns",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066720/",
+            "date_added": "2024-08-13 04:44:52",
+            "id": 1066720,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442681-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442681-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442681-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442681-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442681-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442681-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442681-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442681-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442681-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "2",
+            "name": null,
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066719/",
+            "date_added": "2024-08-13 04:43:39",
+            "id": 1066719,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442680-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442680-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442680-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442680-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442680-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442680-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442680-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442680-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442680-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "2",
+            "name": "Robin Lives! Chapter 2: Bedlam",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066718/",
+            "date_added": "2024-08-13 04:42:44",
+            "id": 1066718,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442678-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442678-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442678-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442678-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442678-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442678-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442678-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442678-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442678-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": "Chapter One",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066717/",
+            "date_added": "2024-08-13 04:41:10",
+            "id": 1066717,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442674-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442674-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442674-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442674-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442674-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442674-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442674-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442674-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442674-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "3",
+            "name": "Chapter Three",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066716/",
+            "date_added": "2024-08-13 04:40:22",
+            "id": 1066716,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442673-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442673-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442673-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442673-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442673-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442673-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442673-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442673-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442673-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "12",
+            "name": "To the Death!",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066715/",
+            "date_added": "2024-08-13 04:39:26",
+            "id": 1066715,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442669-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442669-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442669-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442669-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442669-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442669-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442669-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442669-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442669-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1068",
+            "name": "Challenge from the Stars, Part Two of Three: Falling Like Rain from a Metallic Storm; Lois & Clark: In Love. At Work. Part Two",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066714/",
+            "date_added": "2024-08-13 04:38:24",
+            "id": 1066714,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442668-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442668-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442668-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442668-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442668-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442668-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442668-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442668-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442668-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "4",
+            "name": "Just Win",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066713/",
+            "date_added": "2024-08-13 04:06:06",
+            "id": 1066713,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442649-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442649-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442649-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442649-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442649-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442649-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442649-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442649-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442649-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "2",
+            "name": "Invasion",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066712/",
+            "date_added": "2024-08-13 04:04:41",
+            "id": 1066712,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442645-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442645-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442645-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442645-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442645-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442645-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442645-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442645-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442645-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": "Red Carpet",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066711/",
+            "date_added": "2024-08-13 04:03:24",
+            "id": 1066711,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442643-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442643-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442643-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442643-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442643-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442643-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442643-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442643-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442643-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": "The Infinity Watch; The Death Stone Saga, Chapter 5",
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066710/",
+            "date_added": "2024-08-13 04:00:58",
+            "id": 1066710,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442969-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442969-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442969-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442969-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442969-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442969-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442969-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442969-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442969-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": null,
+            "store_date": "2024-08-14"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-1066709/",
+            "date_added": "2024-08-13 03:59:14",
+            "id": 1066709,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/a/uploads/square_avatar/11/110017/9442639-wwww.jpg",
+                "medium_url": "https://comicvine.gamespot.com/a/uploads/scale_medium/11/110017/9442639-wwww.jpg",
+                "screen_url": "https://comicvine.gamespot.com/a/uploads/screen_medium/11/110017/9442639-wwww.jpg",
+                "screen_large_url": "https://comicvine.gamespot.com/a/uploads/screen_kubrick/11/110017/9442639-wwww.jpg",
+                "small_url": "https://comicvine.gamespot.com/a/uploads/scale_small/11/110017/9442639-wwww.jpg",
+                "super_url": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9442639-wwww.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/a/uploads/scale_avatar/11/110017/9442639-wwww.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/a/uploads/square_mini/11/110017/9442639-wwww.jpg",
+                "original_url": "https://comicvine.gamespot.com/a/uploads/original/11/110017/9442639-wwww.jpg",
+                "image_tags": "All Images"
+            },
+            "issue_number": "1",
+            "name": null,
+            "store_date": "2024-08-14"
+        }
+    ],
+    "version": "1.0"
+}

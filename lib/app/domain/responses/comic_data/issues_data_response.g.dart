@@ -16,8 +16,9 @@ _$IssuesDataResponseImpl _$$IssuesDataResponseImplFromJson(
       numberOfTotalResults: (json['number_of_total_results'] as num?)?.toInt(),
       statusCode: (json['status_code'] as num?)?.toInt(),
       results: (json['results'] as List<dynamic>?)
-          ?.map((e) => Comic.fromJson(e as Map<String, dynamic>))
-          .toList(),
+              ?.map((e) => Comic.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
       version: json['version'] as String?,
     );
 
@@ -34,7 +35,7 @@ Map<String, dynamic> _$$IssuesDataResponseImplToJson(
       'version': instance.version,
     };
 
-_$ResultImpl _$$ResultImplFromJson(Map<String, dynamic> json) => _$ResultImpl(
+_$ComicImpl _$$ComicImplFromJson(Map<String, dynamic> json) => _$ComicImpl(
       aliases: json['aliases'],
       apiDetailUrl: json['api_detail_url'] as String?,
       coverDate: json['cover_date'] == null
@@ -46,14 +47,14 @@ _$ResultImpl _$$ResultImplFromJson(Map<String, dynamic> json) => _$ResultImpl(
       dateLastUpdated: json['date_last_updated'] == null
           ? null
           : DateTime.parse(json['date_last_updated'] as String),
-      deck: json['deck'],
+      deck: json['deck'] as String?,
       description: json['description'] as String?,
       hasStaffReview: json['has_staff_review'] as bool?,
       id: (json['id'] as num?)?.toInt(),
       image: json['image'] == null
           ? null
           : Image.fromJson(json['image'] as Map<String, dynamic>),
-      associatedImages: json['associated_images'] as List<dynamic>?,
+      associatedImages: json['associated_images'] as List<dynamic>? ?? const [],
       issueNumber: json['issue_number'] as String?,
       name: json['name'] as String?,
       siteDetailUrl: json['site_detail_url'] as String?,
@@ -65,7 +66,7 @@ _$ResultImpl _$$ResultImplFromJson(Map<String, dynamic> json) => _$ResultImpl(
           : Volume.fromJson(json['volume'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$ResultImplToJson(_$ResultImpl instance) =>
+Map<String, dynamic> _$$ComicImplToJson(_$ComicImpl instance) =>
     <String, dynamic>{
       'aliases': instance.aliases,
       'api_detail_url': instance.apiDetailUrl,

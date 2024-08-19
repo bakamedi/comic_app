@@ -213,7 +213,7 @@ class _$IssuesDataResponseImpl implements _IssuesDataResponse {
       @JsonKey(name: "number_of_page_results") this.numberOfPageResults,
       @JsonKey(name: "number_of_total_results") this.numberOfTotalResults,
       @JsonKey(name: "status_code") this.statusCode,
-      @JsonKey(name: "results") final List<Comic>? results,
+      @JsonKey(name: "results") final List<Comic>? results = const [],
       @JsonKey(name: "version") this.version})
       : _results = results;
 
@@ -355,7 +355,7 @@ abstract class _IssuesDataResponse implements IssuesDataResponse {
 }
 
 Comic _$ComicFromJson(Map<String, dynamic> json) {
-  return _Result.fromJson(json);
+  return _Comic.fromJson(json);
 }
 
 /// @nodoc
@@ -371,7 +371,7 @@ mixin _$Comic {
   @JsonKey(name: "date_last_updated")
   DateTime? get dateLastUpdated => throw _privateConstructorUsedError;
   @JsonKey(name: "deck")
-  dynamic get deck => throw _privateConstructorUsedError;
+  String? get deck => throw _privateConstructorUsedError;
   @JsonKey(name: "description")
   String? get description => throw _privateConstructorUsedError;
   @JsonKey(name: "has_staff_review")
@@ -413,7 +413,7 @@ abstract class $ComicCopyWith<$Res> {
       @JsonKey(name: "cover_date") DateTime? coverDate,
       @JsonKey(name: "date_added") DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
-      @JsonKey(name: "deck") dynamic deck,
+      @JsonKey(name: "deck") String? deck,
       @JsonKey(name: "description") String? description,
       @JsonKey(name: "has_staff_review") bool? hasStaffReview,
       @JsonKey(name: "id") int? id,
@@ -485,7 +485,7 @@ class _$ComicCopyWithImpl<$Res, $Val extends Comic>
       deck: freezed == deck
           ? _value.deck
           : deck // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -559,10 +559,10 @@ class _$ComicCopyWithImpl<$Res, $Val extends Comic>
 }
 
 /// @nodoc
-abstract class _$$ResultImplCopyWith<$Res> implements $ComicCopyWith<$Res> {
-  factory _$$ResultImplCopyWith(
-          _$ResultImpl value, $Res Function(_$ResultImpl) then) =
-      __$$ResultImplCopyWithImpl<$Res>;
+abstract class _$$ComicImplCopyWith<$Res> implements $ComicCopyWith<$Res> {
+  factory _$$ComicImplCopyWith(
+          _$ComicImpl value, $Res Function(_$ComicImpl) then) =
+      __$$ComicImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -571,7 +571,7 @@ abstract class _$$ResultImplCopyWith<$Res> implements $ComicCopyWith<$Res> {
       @JsonKey(name: "cover_date") DateTime? coverDate,
       @JsonKey(name: "date_added") DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
-      @JsonKey(name: "deck") dynamic deck,
+      @JsonKey(name: "deck") String? deck,
       @JsonKey(name: "description") String? description,
       @JsonKey(name: "has_staff_review") bool? hasStaffReview,
       @JsonKey(name: "id") int? id,
@@ -590,11 +590,11 @@ abstract class _$$ResultImplCopyWith<$Res> implements $ComicCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ResultImplCopyWithImpl<$Res>
-    extends _$ComicCopyWithImpl<$Res, _$ResultImpl>
-    implements _$$ResultImplCopyWith<$Res> {
-  __$$ResultImplCopyWithImpl(
-      _$ResultImpl _value, $Res Function(_$ResultImpl) _then)
+class __$$ComicImplCopyWithImpl<$Res>
+    extends _$ComicCopyWithImpl<$Res, _$ComicImpl>
+    implements _$$ComicImplCopyWith<$Res> {
+  __$$ComicImplCopyWithImpl(
+      _$ComicImpl _value, $Res Function(_$ComicImpl) _then)
       : super(_value, _then);
 
   /// Create a copy of Comic
@@ -619,7 +619,7 @@ class __$$ResultImplCopyWithImpl<$Res>
     Object? storeDate = freezed,
     Object? volume = freezed,
   }) {
-    return _then(_$ResultImpl(
+    return _then(_$ComicImpl(
       aliases: freezed == aliases
           ? _value.aliases
           : aliases // ignore: cast_nullable_to_non_nullable
@@ -643,7 +643,7 @@ class __$$ResultImplCopyWithImpl<$Res>
       deck: freezed == deck
           ? _value.deck
           : deck // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -690,8 +690,8 @@ class __$$ResultImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$ResultImpl implements _Result {
-  const _$ResultImpl(
+class _$ComicImpl implements _Comic {
+  const _$ComicImpl(
       {@JsonKey(name: "aliases") this.aliases,
       @JsonKey(name: "api_detail_url") this.apiDetailUrl,
       @JsonKey(name: "cover_date") this.coverDate,
@@ -702,7 +702,8 @@ class _$ResultImpl implements _Result {
       @JsonKey(name: "has_staff_review") this.hasStaffReview,
       @JsonKey(name: "id") this.id,
       @JsonKey(name: "image") this.image,
-      @JsonKey(name: "associated_images") final List<dynamic>? associatedImages,
+      @JsonKey(name: "associated_images")
+      final List<dynamic>? associatedImages = const [],
       @JsonKey(name: "issue_number") this.issueNumber,
       @JsonKey(name: "name") this.name,
       @JsonKey(name: "site_detail_url") this.siteDetailUrl,
@@ -710,8 +711,8 @@ class _$ResultImpl implements _Result {
       @JsonKey(name: "volume") this.volume})
       : _associatedImages = associatedImages;
 
-  factory _$ResultImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ResultImplFromJson(json);
+  factory _$ComicImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ComicImplFromJson(json);
 
   @override
   @JsonKey(name: "aliases")
@@ -730,7 +731,7 @@ class _$ResultImpl implements _Result {
   final DateTime? dateLastUpdated;
   @override
   @JsonKey(name: "deck")
-  final dynamic deck;
+  final String? deck;
   @override
   @JsonKey(name: "description")
   final String? description;
@@ -780,7 +781,7 @@ class _$ResultImpl implements _Result {
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ResultImpl &&
+            other is _$ComicImpl &&
             const DeepCollectionEquality().equals(other.aliases, aliases) &&
             (identical(other.apiDetailUrl, apiDetailUrl) ||
                 other.apiDetailUrl == apiDetailUrl) &&
@@ -790,7 +791,7 @@ class _$ResultImpl implements _Result {
                 other.dateAdded == dateAdded) &&
             (identical(other.dateLastUpdated, dateLastUpdated) ||
                 other.dateLastUpdated == dateLastUpdated) &&
-            const DeepCollectionEquality().equals(other.deck, deck) &&
+            (identical(other.deck, deck) || other.deck == deck) &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.hasStaffReview, hasStaffReview) ||
@@ -818,7 +819,7 @@ class _$ResultImpl implements _Result {
       coverDate,
       dateAdded,
       dateLastUpdated,
-      const DeepCollectionEquality().hash(deck),
+      deck,
       description,
       hasStaffReview,
       id,
@@ -835,25 +836,25 @@ class _$ResultImpl implements _Result {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$ResultImplCopyWith<_$ResultImpl> get copyWith =>
-      __$$ResultImplCopyWithImpl<_$ResultImpl>(this, _$identity);
+  _$$ComicImplCopyWith<_$ComicImpl> get copyWith =>
+      __$$ComicImplCopyWithImpl<_$ComicImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$ResultImplToJson(
+    return _$$ComicImplToJson(
       this,
     );
   }
 }
 
-abstract class _Result implements Comic {
-  const factory _Result(
+abstract class _Comic implements Comic {
+  const factory _Comic(
       {@JsonKey(name: "aliases") final dynamic aliases,
       @JsonKey(name: "api_detail_url") final String? apiDetailUrl,
       @JsonKey(name: "cover_date") final DateTime? coverDate,
       @JsonKey(name: "date_added") final DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") final DateTime? dateLastUpdated,
-      @JsonKey(name: "deck") final dynamic deck,
+      @JsonKey(name: "deck") final String? deck,
       @JsonKey(name: "description") final String? description,
       @JsonKey(name: "has_staff_review") final bool? hasStaffReview,
       @JsonKey(name: "id") final int? id,
@@ -863,9 +864,9 @@ abstract class _Result implements Comic {
       @JsonKey(name: "name") final String? name,
       @JsonKey(name: "site_detail_url") final String? siteDetailUrl,
       @JsonKey(name: "store_date") final DateTime? storeDate,
-      @JsonKey(name: "volume") final Volume? volume}) = _$ResultImpl;
+      @JsonKey(name: "volume") final Volume? volume}) = _$ComicImpl;
 
-  factory _Result.fromJson(Map<String, dynamic> json) = _$ResultImpl.fromJson;
+  factory _Comic.fromJson(Map<String, dynamic> json) = _$ComicImpl.fromJson;
 
   @override
   @JsonKey(name: "aliases")
@@ -884,7 +885,7 @@ abstract class _Result implements Comic {
   DateTime? get dateLastUpdated;
   @override
   @JsonKey(name: "deck")
-  dynamic get deck;
+  String? get deck;
   @override
   @JsonKey(name: "description")
   String? get description;
@@ -920,7 +921,7 @@ abstract class _Result implements Comic {
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ResultImplCopyWith<_$ResultImpl> get copyWith =>
+  _$$ComicImplCopyWith<_$ComicImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

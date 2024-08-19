@@ -23,7 +23,7 @@ class IssuesDataResponse with _$IssuesDataResponse {
     @JsonKey(name: "number_of_page_results") int? numberOfPageResults,
     @JsonKey(name: "number_of_total_results") int? numberOfTotalResults,
     @JsonKey(name: "status_code") int? statusCode,
-    @JsonKey(name: "results") List<Comic>? results,
+    @JsonKey(name: "results") @Default([]) List<Comic>? results,
     @JsonKey(name: "version") String? version,
   }) = _IssuesDataResponse;
 
@@ -39,18 +39,20 @@ class Comic with _$Comic {
     @JsonKey(name: "cover_date") DateTime? coverDate,
     @JsonKey(name: "date_added") DateTime? dateAdded,
     @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
-    @JsonKey(name: "deck") dynamic deck,
+    @JsonKey(name: "deck") String? deck,
     @JsonKey(name: "description") String? description,
     @JsonKey(name: "has_staff_review") bool? hasStaffReview,
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "image") Image? image,
-    @JsonKey(name: "associated_images") List<dynamic>? associatedImages,
+    @JsonKey(name: "associated_images")
+    @Default([])
+    List<dynamic>? associatedImages,
     @JsonKey(name: "issue_number") String? issueNumber,
     @JsonKey(name: "name") String? name,
     @JsonKey(name: "site_detail_url") String? siteDetailUrl,
     @JsonKey(name: "store_date") DateTime? storeDate,
     @JsonKey(name: "volume") Volume? volume,
-  }) = _Result;
+  }) = _Comic;
 
   factory Comic.fromJson(Map<String, dynamic> json) => _$ComicFromJson(json);
 }
