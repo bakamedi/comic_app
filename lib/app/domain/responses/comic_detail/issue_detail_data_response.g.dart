@@ -38,10 +38,10 @@ _$ResultsImpl _$$ResultsImplFromJson(Map<String, dynamic> json) =>
     _$ResultsImpl(
       aliases: json['aliases'],
       apiDetailUrl: json['api_detail_url'] as String?,
-      associatedImages: json['associated_images'] as List<dynamic>?,
-      characterCredits: json['character_credits'] as List<dynamic>?,
-      characterDiedIn: json['character_died_in'] as List<dynamic>?,
-      conceptCredits: json['concept_credits'] as List<dynamic>?,
+      associatedImages: json['associated_images'] as List<dynamic>? ?? const [],
+      characterCredits: json['character_credits'] as List<dynamic>? ?? const [],
+      characterDiedIn: json['character_died_in'] as List<dynamic>? ?? const [],
+      conceptCredits: json['concept_credits'] as List<dynamic>? ?? const [],
       coverDate: json['cover_date'] == null
           ? null
           : DateTime.parse(json['cover_date'] as String),
@@ -52,7 +52,7 @@ _$ResultsImpl _$$ResultsImplFromJson(Map<String, dynamic> json) =>
           ? null
           : DateTime.parse(json['date_last_updated'] as String),
       deck: json['deck'],
-      description: json['description'],
+      description: json['description'] as String? ?? '',
       firstAppearanceCharacters: json['first_appearance_characters'],
       firstAppearanceConcepts: json['first_appearance_concepts'],
       firstAppearanceLocations: json['first_appearance_locations'],
@@ -66,20 +66,22 @@ _$ResultsImpl _$$ResultsImplFromJson(Map<String, dynamic> json) =>
           : Image.fromJson(json['image'] as Map<String, dynamic>),
       issueNumber: json['issue_number'] as String?,
       locationCredits: (json['location_credits'] as List<dynamic>?)
-          ?.map((e) => Volume.fromJson(e as Map<String, dynamic>))
-          .toList(),
+              ?.map((e) => Volume.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
       name: json['name'] as String?,
-      objectCredits: json['object_credits'] as List<dynamic>?,
+      objectCredits: json['object_credits'] as List<dynamic>? ?? const [],
       personCredits: (json['person_credits'] as List<dynamic>?)
-          ?.map((e) => Volume.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      siteDetailUrl: json['site_detail_url'] as String?,
+              ?.map((e) => Volume.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      siteDetailUrl: json['site_detail_url'] as String? ?? '',
       storeDate: json['store_date'] == null
           ? null
           : DateTime.parse(json['store_date'] as String),
-      storyArcCredits: json['story_arc_credits'] as List<dynamic>?,
-      teamCredits: json['team_credits'] as List<dynamic>?,
-      teamDisbandedIn: json['team_disbanded_in'] as List<dynamic>?,
+      storyArcCredits: json['story_arc_credits'] as List<dynamic>? ?? const [],
+      teamCredits: json['team_credits'] as List<dynamic>? ?? const [],
+      teamDisbandedIn: json['team_disbanded_in'] as List<dynamic>? ?? const [],
       volume: json['volume'] == null
           ? null
           : Volume.fromJson(json['volume'] as Map<String, dynamic>),

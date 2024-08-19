@@ -388,7 +388,7 @@ mixin _$Results {
   @JsonKey(name: "deck")
   dynamic get deck => throw _privateConstructorUsedError;
   @JsonKey(name: "description")
-  dynamic get description => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
   @JsonKey(name: "first_appearance_characters")
   dynamic get firstAppearanceCharacters => throw _privateConstructorUsedError;
   @JsonKey(name: "first_appearance_concepts")
@@ -455,7 +455,7 @@ abstract class $ResultsCopyWith<$Res> {
       @JsonKey(name: "date_added") DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
       @JsonKey(name: "deck") dynamic deck,
-      @JsonKey(name: "description") dynamic description,
+      @JsonKey(name: "description") String? description,
       @JsonKey(name: "first_appearance_characters")
       dynamic firstAppearanceCharacters,
       @JsonKey(name: "first_appearance_concepts")
@@ -576,7 +576,7 @@ class _$ResultsCopyWithImpl<$Res, $Val extends Results>
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       firstAppearanceCharacters: freezed == firstAppearanceCharacters
           ? _value.firstAppearanceCharacters
           : firstAppearanceCharacters // ignore: cast_nullable_to_non_nullable
@@ -707,7 +707,7 @@ abstract class _$$ResultsImplCopyWith<$Res> implements $ResultsCopyWith<$Res> {
       @JsonKey(name: "date_added") DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
       @JsonKey(name: "deck") dynamic deck,
-      @JsonKey(name: "description") dynamic description,
+      @JsonKey(name: "description") String? description,
       @JsonKey(name: "first_appearance_characters")
       dynamic firstAppearanceCharacters,
       @JsonKey(name: "first_appearance_concepts")
@@ -828,7 +828,7 @@ class __$$ResultsImplCopyWithImpl<$Res>
       description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
       firstAppearanceCharacters: freezed == firstAppearanceCharacters
           ? _value.firstAppearanceCharacters
           : firstAppearanceCharacters // ignore: cast_nullable_to_non_nullable
@@ -919,15 +919,19 @@ class _$ResultsImpl implements _Results {
   const _$ResultsImpl(
       {@JsonKey(name: "aliases") this.aliases,
       @JsonKey(name: "api_detail_url") this.apiDetailUrl,
-      @JsonKey(name: "associated_images") final List<dynamic>? associatedImages,
-      @JsonKey(name: "character_credits") final List<dynamic>? characterCredits,
-      @JsonKey(name: "character_died_in") final List<dynamic>? characterDiedIn,
-      @JsonKey(name: "concept_credits") final List<dynamic>? conceptCredits,
+      @JsonKey(name: "associated_images")
+      final List<dynamic>? associatedImages = const [],
+      @JsonKey(name: "character_credits")
+      final List<dynamic>? characterCredits = const [],
+      @JsonKey(name: "character_died_in")
+      final List<dynamic>? characterDiedIn = const [],
+      @JsonKey(name: "concept_credits")
+      final List<dynamic>? conceptCredits = const [],
       @JsonKey(name: "cover_date") this.coverDate,
       @JsonKey(name: "date_added") this.dateAdded,
       @JsonKey(name: "date_last_updated") this.dateLastUpdated,
       @JsonKey(name: "deck") this.deck,
-      @JsonKey(name: "description") this.description,
+      @JsonKey(name: "description") this.description = '',
       @JsonKey(name: "first_appearance_characters")
       this.firstAppearanceCharacters,
       @JsonKey(name: "first_appearance_concepts") this.firstAppearanceConcepts,
@@ -941,15 +945,21 @@ class _$ResultsImpl implements _Results {
       @JsonKey(name: "id") this.id,
       @JsonKey(name: "image") this.image,
       @JsonKey(name: "issue_number") this.issueNumber,
-      @JsonKey(name: "location_credits") final List<Volume>? locationCredits,
+      @JsonKey(name: "location_credits")
+      final List<Volume>? locationCredits = const [],
       @JsonKey(name: "name") this.name,
-      @JsonKey(name: "object_credits") final List<dynamic>? objectCredits,
-      @JsonKey(name: "person_credits") final List<Volume>? personCredits,
-      @JsonKey(name: "site_detail_url") this.siteDetailUrl,
+      @JsonKey(name: "object_credits")
+      final List<dynamic>? objectCredits = const [],
+      @JsonKey(name: "person_credits")
+      final List<Volume>? personCredits = const [],
+      @JsonKey(name: "site_detail_url") this.siteDetailUrl = '',
       @JsonKey(name: "store_date") this.storeDate,
-      @JsonKey(name: "story_arc_credits") final List<dynamic>? storyArcCredits,
-      @JsonKey(name: "team_credits") final List<dynamic>? teamCredits,
-      @JsonKey(name: "team_disbanded_in") final List<dynamic>? teamDisbandedIn,
+      @JsonKey(name: "story_arc_credits")
+      final List<dynamic>? storyArcCredits = const [],
+      @JsonKey(name: "team_credits")
+      final List<dynamic>? teamCredits = const [],
+      @JsonKey(name: "team_disbanded_in")
+      final List<dynamic>? teamDisbandedIn = const [],
       @JsonKey(name: "volume") this.volume})
       : _associatedImages = associatedImages,
         _characterCredits = characterCredits,
@@ -1031,7 +1041,7 @@ class _$ResultsImpl implements _Results {
   final dynamic deck;
   @override
   @JsonKey(name: "description")
-  final dynamic description;
+  final String? description;
   @override
   @JsonKey(name: "first_appearance_characters")
   final dynamic firstAppearanceCharacters;
@@ -1169,8 +1179,8 @@ class _$ResultsImpl implements _Results {
             (identical(other.dateLastUpdated, dateLastUpdated) ||
                 other.dateLastUpdated == dateLastUpdated) &&
             const DeepCollectionEquality().equals(other.deck, deck) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
             const DeepCollectionEquality().equals(
                 other.firstAppearanceCharacters, firstAppearanceCharacters) &&
             const DeepCollectionEquality().equals(
@@ -1223,7 +1233,7 @@ class _$ResultsImpl implements _Results {
         dateAdded,
         dateLastUpdated,
         const DeepCollectionEquality().hash(deck),
-        const DeepCollectionEquality().hash(description),
+        description,
         const DeepCollectionEquality().hash(firstAppearanceCharacters),
         const DeepCollectionEquality().hash(firstAppearanceConcepts),
         const DeepCollectionEquality().hash(firstAppearanceLocations),
@@ -1274,7 +1284,7 @@ abstract class _Results implements Results {
       @JsonKey(name: "date_added") final DateTime? dateAdded,
       @JsonKey(name: "date_last_updated") final DateTime? dateLastUpdated,
       @JsonKey(name: "deck") final dynamic deck,
-      @JsonKey(name: "description") final dynamic description,
+      @JsonKey(name: "description") final String? description,
       @JsonKey(name: "first_appearance_characters")
       final dynamic firstAppearanceCharacters,
       @JsonKey(name: "first_appearance_concepts")
@@ -1336,7 +1346,7 @@ abstract class _Results implements Results {
   dynamic get deck;
   @override
   @JsonKey(name: "description")
-  dynamic get description;
+  String? get description;
   @override
   @JsonKey(name: "first_appearance_characters")
   dynamic get firstAppearanceCharacters;

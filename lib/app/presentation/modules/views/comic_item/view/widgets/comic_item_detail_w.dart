@@ -22,7 +22,7 @@ class ComicItemDetailW extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: adaptativeScreen.bhp(27),
+        top: adaptativeScreen.bhp(30),
       ),
       padding: EdgeInsets.only(
         left: adaptativeScreen.bwh(4),
@@ -46,7 +46,7 @@ class ComicItemDetailW extends StatelessWidget {
               ),
             ),
             _title('Creators'),
-            _body(comicDetail.personCredits),
+            _body(comicDetail.personCredits, subTitle: true),
             _title('Characters'),
             _body(comicDetail.characterCredits),
             _title('Teams'),
@@ -67,6 +67,28 @@ class ComicItemDetailW extends StatelessWidget {
     } else {
       final stringValue = comicDetail.description as String;
       return stringValue.deleteHtmlTags;
+    }
+  }
+
+  String _itemRole(dynamic item, {required String key}) {
+    try {
+      if (item == null) {
+        return '';
+      }
+      // Verificar si item es un Map<String, dynamic> y contiene la clave 'name'
+      else if (item is Map<String, dynamic> && item.containsKey(key)) {
+        final name = item[key];
+        if (name is String) {
+          return name;
+        }
+      } else if (item.role is String) {
+        return item.role;
+      }
+
+      // Si item no es un Map<String, dynamic> ni tiene la propiedad 'name', lanzar un error o manejarlo según lo necesites
+      throw ArgumentError('');
+    } catch (e) {
+      return '';
     }
   }
 
@@ -108,7 +130,10 @@ class ComicItemDetailW extends StatelessWidget {
     );
   }
 
-  Widget _body(List<dynamic>? list) {
+  Widget _body(
+    List<dynamic>? list, {
+    bool subTitle = false,
+  }) {
     if (list == null || list.isEmpty) {
       return adaptativeScreen.bhp(2).h;
     }
@@ -116,7 +141,7 @@ class ComicItemDetailW extends StatelessWidget {
       margin: EdgeInsets.only(
         top: adaptativeScreen.bhp(2),
       ),
-      height: adaptativeScreen.hp(5) * list.length,
+      height: adaptativeScreen.hp(3) * list.length,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -148,13 +173,14 @@ class ComicItemDetailW extends StatelessWidget {
                       fontSize: adaptativeScreen.dp(1.5),
                     ),
                   ),
-                  Text(
-                    _itemName(item, key: 'role'),
-                    style: TextStyle(
-                      color: ThemeAppColors.greySecondBackground,
-                      fontSize: adaptativeScreen.dp(1.5),
+                  if (subTitle)
+                    Text(
+                      _itemRole(item, key: 'role'),
+                      style: TextStyle(
+                        color: ThemeAppColors.greySecondBackground,
+                        fontSize: adaptativeScreen.dp(1.5),
+                      ),
                     ),
-                  ),
                 ],
               ),
             ],

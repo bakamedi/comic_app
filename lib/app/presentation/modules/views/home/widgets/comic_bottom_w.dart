@@ -35,7 +35,7 @@ class ComicBottomW extends StatelessWidget {
             ),
           ),
           Text(
-            comic.storeDate == null ? '' : comic.storeDate!.formattedDate,
+            comic.storeDate == null ? '' : comic.dateAdded!.formattedDate,
             textAlign: TextAlign.justify,
             style: TextStyle(
               color: ThemeAppColors.greySeparator,

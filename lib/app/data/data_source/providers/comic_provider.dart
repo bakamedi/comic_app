@@ -14,7 +14,7 @@ class ComicProvider {
   }) : _httpHelper = httpHelper;
 
   Future<Either<Failure, IssuesDataResponse>> getComics({
-    int limit = 10,
+    int limit = 30,
   }) async {
     final dateFormatter = DateFormat('yyyy-MM-dd');
     final startOfCurrentYear = DateTime(DateTime.now().year, 1, 1);
@@ -29,7 +29,7 @@ class ComicProvider {
         'field_list':
             'id,image,date_added,name,api_detail_url,issue_number,store_date',
         'filter': 'date_added:$dateFilter',
-        'limit': 10,
+        'limit': limit,
       },
     );
     return result.when(

@@ -30,6 +30,7 @@ class ComicItemImageW extends StatelessWidget {
           topRight: Radius.circular(10),
         ),
       ),
+      height: adaptativeScreen.bhp(40),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [

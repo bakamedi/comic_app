@@ -36,15 +36,23 @@ class Results with _$Results {
   const factory Results({
     @JsonKey(name: "aliases") dynamic aliases,
     @JsonKey(name: "api_detail_url") String? apiDetailUrl,
-    @JsonKey(name: "associated_images") List<dynamic>? associatedImages,
-    @JsonKey(name: "character_credits") List<dynamic>? characterCredits,
-    @JsonKey(name: "character_died_in") List<dynamic>? characterDiedIn,
-    @JsonKey(name: "concept_credits") List<dynamic>? conceptCredits,
+    @JsonKey(name: "associated_images")
+    @Default([])
+    List<dynamic>? associatedImages,
+    @JsonKey(name: "character_credits")
+    @Default([])
+    List<dynamic>? characterCredits,
+    @JsonKey(name: "character_died_in")
+    @Default([])
+    List<dynamic>? characterDiedIn,
+    @JsonKey(name: "concept_credits")
+    @Default([])
+    List<dynamic>? conceptCredits,
     @JsonKey(name: "cover_date") DateTime? coverDate,
     @JsonKey(name: "date_added") DateTime? dateAdded,
     @JsonKey(name: "date_last_updated") DateTime? dateLastUpdated,
     @JsonKey(name: "deck") dynamic deck,
-    @JsonKey(name: "description") dynamic description,
+    @JsonKey(name: "description") @Default('') String? description,
     @JsonKey(name: "first_appearance_characters")
     dynamic firstAppearanceCharacters,
     @JsonKey(name: "first_appearance_concepts") dynamic firstAppearanceConcepts,
@@ -58,15 +66,21 @@ class Results with _$Results {
     @JsonKey(name: "id") int? id,
     @JsonKey(name: "image") Image? image,
     @JsonKey(name: "issue_number") String? issueNumber,
-    @JsonKey(name: "location_credits") List<Volume>? locationCredits,
+    @JsonKey(name: "location_credits")
+    @Default([])
+    List<Volume>? locationCredits,
     @JsonKey(name: "name") String? name,
-    @JsonKey(name: "object_credits") List<dynamic>? objectCredits,
-    @JsonKey(name: "person_credits") List<Volume>? personCredits,
-    @JsonKey(name: "site_detail_url") String? siteDetailUrl,
+    @JsonKey(name: "object_credits") @Default([]) List<dynamic>? objectCredits,
+    @JsonKey(name: "person_credits") @Default([]) List<Volume>? personCredits,
+    @JsonKey(name: "site_detail_url") @Default('') String? siteDetailUrl,
     @JsonKey(name: "store_date") DateTime? storeDate,
-    @JsonKey(name: "story_arc_credits") List<dynamic>? storyArcCredits,
-    @JsonKey(name: "team_credits") List<dynamic>? teamCredits,
-    @JsonKey(name: "team_disbanded_in") List<dynamic>? teamDisbandedIn,
+    @JsonKey(name: "story_arc_credits")
+    @Default([])
+    List<dynamic>? storyArcCredits,
+    @JsonKey(name: "team_credits") @Default([]) List<dynamic>? teamCredits,
+    @JsonKey(name: "team_disbanded_in")
+    @Default([])
+    List<dynamic>? teamDisbandedIn,
     @JsonKey(name: "volume") Volume? volume,
   }) = _Results;
 
