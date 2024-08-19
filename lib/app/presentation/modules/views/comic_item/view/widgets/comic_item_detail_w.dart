@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/adaptative_screen/adaptative_screen.dart';
 import '../../../../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 import '../../../../../global/extensions/widgets_ext.dart';
+import '../../../../../global/extensions/strings_ext.dart';
 import '../../../../../global/theme/theme_app_data.dart';
 import '../../../../../global/widgets/separator/separator_gw.dart';
 
@@ -33,9 +34,7 @@ class ComicItemDetailW extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              comicDetail.description == null
-                  ? ''
-                  : comicDetail.description!.deleteHtmlTags.deleteHtmlTags,
+              _description(),
               style: TextStyle(
                 fontStyle: FontStyle.italic,
                 fontSize: adaptativeScreen.dp(1.5),
@@ -62,6 +61,37 @@ class ComicItemDetailW extends StatelessWidget {
     );
   }
 
+  String _description() {
+    if (comicDetail.description == null) {
+      return '';
+    } else {
+      final stringValue = comicDetail.description as String;
+      return stringValue.deleteHtmlTags;
+    }
+  }
+
+  String _itemName(dynamic item, {required String key}) {
+    try {
+      if (item == null) {
+        return '';
+      }
+      // Verificar si item es un Map<String, dynamic> y contiene la clave 'name'
+      else if (item is Map<String, dynamic> && item.containsKey(key)) {
+        final name = item[key];
+        if (name is String) {
+          return name;
+        }
+      } else if (item.name is String) {
+        return item.name;
+      }
+
+      // Si item no es un Map<String, dynamic> ni tiene la propiedad 'name', lanzar un error o manejarlo según lo necesites
+      throw ArgumentError('');
+    } catch (e) {
+      return '';
+    }
+  }
+
   Widget _title(String title) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,7 +116,7 @@ class ComicItemDetailW extends StatelessWidget {
       margin: EdgeInsets.only(
         top: adaptativeScreen.bhp(2),
       ),
-      height: adaptativeScreen.hp(3) * list.length,
+      height: adaptativeScreen.hp(5) * list.length,
       child: GridView.builder(
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -112,20 +142,19 @@ class ComicItemDetailW extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    item.name ?? '',
+                    _itemName(item, key: 'name'),
                     style: TextStyle(
                       color: ThemeAppColors.green,
                       fontSize: adaptativeScreen.dp(1.5),
                     ),
                   ),
-                  if (item.role != null)
-                    Text(
-                      item.role!,
-                      style: TextStyle(
-                        color: ThemeAppColors.greySecondBackground,
-                        fontSize: adaptativeScreen.dp(1.5),
-                      ),
+                  Text(
+                    _itemName(item, key: 'role'),
+                    style: TextStyle(
+                      color: ThemeAppColors.greySecondBackground,
+                      fontSize: adaptativeScreen.dp(1.5),
                     ),
+                  ),
                 ],
               ),
             ],
