@@ -38,5 +38,5 @@
     .env
     El archivo .env se lo puede crear y añadir estos campos
     API_KEY= #AQUI VA EL API KEY DEL https://comicvine.gamespot.com/api/documentation
-    USE_MOCK_DATA=FALSE # AQUI SE VA EL CAMPO PARA EJECUTAR EL API O EL MOCKDATA
+    USE_MOCK_DATA=FALSE # AQUI SE VA EL CAMPO PARA EJECUTAR EL API CON 'TRUE' O EL MOCKDATA CON 'FALSE'
     ```
