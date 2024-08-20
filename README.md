@@ -1,16 +1,42 @@
-# comic_app
+# COMIC BOOK APP
 
-A new Flutter project.
+## Instalación
 
-## Getting Started
+### Prerrequisitos
 
-This project is a starting point for a Flutter application.
+- Tener instalado Flutter en tu sistema. Puedes encontrar instrucciones de instalación [aquí](https://flutter.dev/docs/get-started/install).
 
-A few resources to get you started if this is your first Flutter project:
+### Pasos de Instalación
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clona este repositorio en tu máquina local usando Git:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ```bash
+    git clone git@github.com:bakamedi/comic_app.git
+    ```
+
+2. Instala las dependencias del proyecto usando Flutter:
+
+    ```bash
+    flutter pub get
+    ```
+
+3. Luego ejecutar el siguiente comando para generar los modelos:
+
+    ```bash
+    flutter pub run build_runner watch --delete-conflicting-outputs
+    ```
+
+    ó
+
+    ```bash
+    flutter pub run build_runner build
+    ```
+
+4. Se tiene que pedir el archivo .env sin eso no va a ejecutar el proyecto
+
+    ```bash
+    .env
+    El archivo .env se lo puede crear y añadir estos campos
+    API_KEY= #AQUI VA EL API KEY DEL https://comicvine.gamespot.com/api/documentation
+    USE_MOCK_DATA=FALSE # AQUI SE VA EL CAMPO PARA EJECUTAR EL API O EL MOCKDATA
+    ```
