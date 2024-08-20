@@ -20,7 +20,8 @@ class ComicProvider extends ComicProviderRepository {
 
   @override
   Future<Either<Failure, IssuesDataResponse>> getComics({
-    int limit = 30,
+    required int offset,
+    required int limit,
   }) async {
     try {
       final useMockData = dotenv.get('USE_MOCK_DATA') == 'TRUE';
@@ -35,8 +36,9 @@ class ComicProvider extends ComicProviderRepository {
         final dateFormatter = DateFormat('yyyy-MM-dd');
         final startOfCurrentYear = DateTime(DateTime.now().year, 1, 1);
         final currentDate = DateTime.now();
-        final formattedStartOfYearDate =
-            dateFormatter.format(startOfCurrentYear);
+        final formattedStartOfYearDate = dateFormatter.format(
+          startOfCurrentYear,
+        );
         final formattedCurrentDate = dateFormatter.format(currentDate);
         final dateFilter = '$formattedStartOfYearDate|$formattedCurrentDate';
         final result = await _httpHelper.request(
@@ -47,6 +49,7 @@ class ComicProvider extends ComicProviderRepository {
                 'id,image,date_added,name,api_detail_url,issue_number,store_date',
             'filter': 'date_added:$dateFilter',
             'limit': limit,
+            'offset': offset,
           },
         );
         return result.when(

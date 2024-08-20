@@ -22,15 +22,14 @@ class ComicsW extends StatelessWidget {
     return StateBodyGW(
       state: homeCubit.stateType,
       loadingWidget: const CardShimmer(),
-      onPressedRetry: () => homeCubit.getAll(),
+      onPressedRetry: () => homeCubit.getAll(1, 30),
       isSliver: true,
-      child: homeCubit.issuesDataResponse == null
+      child: homeCubit.comics == null
           ? adaptativeScreen.hp(1).h.sliverBox
           : SliverList.builder(
-              itemCount: homeCubit.issuesDataResponse!.results!.length,
+              itemCount: homeCubit.comics!.length,
               itemBuilder: (context, index) {
-                final Comic comic =
-                    homeCubit.issuesDataResponse!.results![index];
+                final Comic comic = homeCubit.comics![index];
                 return ComicItemW(
                   adaptativeScreen: adaptativeScreen,
                   comic: comic,

@@ -5,7 +5,8 @@ import '../../../domain/responses/comic_detail/issue_detail_data_response.dart';
 
 abstract class ComicProviderRepository {
   Future<Either<Failure, IssuesDataResponse>> getComics({
-    int limit = 30,
+    required int limit,
+    required int offset,
   });
 
   Future<Either<Failure, IssueDetailDataResponse>> getComicDetail({

@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../domain/failures/failure.dart';
@@ -8,6 +9,7 @@ import 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   final ComicRepository _comicRepository;
+  ScrollController? _scrollController;
 
   HomeCubit({
     required ComicRepository comicRepository,
@@ -15,23 +17,24 @@ class HomeCubit extends Cubit<HomeState> {
         super(const HomeState(
           stateType: StateType.loading,
           failure: Failure.unknown(),
-          issuesDataResponse: null,
+          results: [],
+          limit: 0,
+          totalResults: 0,
+          offset: 0,
         )) {
-    getAll();
+    _scrollController = ScrollController();
+    getAll(0, 2);
   }
 
   StateType get stateType => state.stateType;
-  IssuesDataResponse? get issuesDataResponse => state.issuesDataResponse;
+  List<Comic>? get comics => state.results;
+  ScrollController? get scrollController => _scrollController;
+  int get limit => state.limit;
+  int get totalResults => state.totalResults;
+  int get offset => state.offset;
 
-  void getAll() async {
-    emit(
-      const HomeState(
-        stateType: StateType.loading,
-        issuesDataResponse: null,
-      ),
-    );
-
-    final result = await _comicRepository.getAllComics();
+  void getAll(int offset, int limit) async {
+    final result = await _comicRepository.getAllComics(offset, limit);
 
     result.when(
       left: (failure) {
@@ -39,15 +42,25 @@ class HomeCubit extends Cubit<HomeState> {
         emit(
           HomeState(
             stateType: stateType,
-            issuesDataResponse: null,
+            results: const [],
           ),
         );
       },
       right: (data) {
+        final IssuesDataResponse datas = data;
+        final prevComic = List<Comic>.from(
+          state.results ?? [],
+        );
+        final list = datas.results ?? [];
         emit(
           HomeState(
             stateType: StateType.success,
-            issuesDataResponse: data,
+            offset: datas.offset!,
+            totalResults: datas.numberOfTotalResults!,
+            results: [
+              ...prevComic,
+              ...list,
+            ],
           ),
         );
       },

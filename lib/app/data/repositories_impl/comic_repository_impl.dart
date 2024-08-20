@@ -13,8 +13,14 @@ class ComicRepositoryImpl extends ComicRepository {
   }) : _comicProvider = comicProvider;
 
   @override
-  FutureEither<Failure, IssuesDataResponse> getAllComics() async {
-    return await _comicProvider.getComics();
+  FutureEither<Failure, IssuesDataResponse> getAllComics(
+    int offset,
+    int limit,
+  ) async {
+    return await _comicProvider.getComics(
+      offset: offset,
+      limit: limit,
+    );
   }
 
   @override

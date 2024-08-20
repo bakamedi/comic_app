@@ -4,7 +4,10 @@ import '../responses/comic_data/issues_data_response.dart';
 import '../responses/comic_detail/issue_detail_data_response.dart';
 
 abstract class ComicRepository {
-  FutureEither<Failure, IssuesDataResponse> getAllComics();
+  FutureEither<Failure, IssuesDataResponse> getAllComics(
+    int offset,
+    int limit,
+  );
   FutureEither<Failure, IssueDetailDataResponse> getComicsDetail({
     required String urlPath,
   });

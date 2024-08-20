@@ -65,7 +65,7 @@ void _injectProviders({required String mockData}) {
       error: true,
       compact: true,
       maxWidth: 90,
-      enabled: true,
+      enabled: false,
     ),
   );
 
