@@ -2,6 +2,7 @@ import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/adaptative_screen/adaptative_screen.dart';
+import '../../../../../../core/constants/http_constants.dart';
 import '../../../../../global/theme/theme_app_data.dart';
 
 class ComicItemImageW extends StatelessWidget {
@@ -42,6 +43,7 @@ class ComicItemImageW extends StatelessWidget {
               children: [
                 ExtendedImage.network(
                   originalUrl,
+                  headers: HttpConstants.comicVineHeaders,
                   border: Border.all(
                     width: 2.5,
                     color: Colors.black,

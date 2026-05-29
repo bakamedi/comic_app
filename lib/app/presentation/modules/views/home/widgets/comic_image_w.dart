@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
+import '../../../../../core/constants/http_constants.dart';
 
 class ComicImageW extends StatelessWidget {
   final AdaptativeScreen adaptativeScreen;
@@ -15,6 +16,7 @@ class ComicImageW extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       originalUrl,
+      headers: HttpConstants.comicVineHeaders,
       width: adaptativeScreen.width,
       fit: BoxFit.fitHeight,
     );

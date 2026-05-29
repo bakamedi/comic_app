@@ -3,6 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
+import 'core/constants/http_constants.dart';
 import 'data/data_source/providers/comic_provider.dart';
 import 'data/helpers/http/http_helper.dart';
 import 'data/repositories_impl/comic_repository_impl.dart';
@@ -49,6 +50,7 @@ void _injectProviders({required String mockData}) {
       connectTimeout: _httpTimeout,
       receiveTimeout: _httpTimeout,
       sendTimeout: _httpTimeout,
+      headers: HttpConstants.comicVineHeaders,
       queryParameters: {
         'api_key': dotenv.get('API_KEY'),
         'format': 'json',

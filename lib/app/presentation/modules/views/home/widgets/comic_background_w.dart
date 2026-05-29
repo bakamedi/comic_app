@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/widgets.dart';
 
 import '../../../../../core/adaptative_screen/adaptative_screen.dart';
+import '../../../../../core/constants/http_constants.dart';
 
 class ComicBackgroundW extends StatelessWidget {
   final AdaptativeScreen adaptativeScreen;
@@ -23,6 +24,7 @@ class ComicBackgroundW extends StatelessWidget {
         filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
         child: Image.network(
           originalUrl,
+          headers: HttpConstants.comicVineHeaders,
           width: adaptativeScreen.width,
           fit: BoxFit.cover,
         ),
